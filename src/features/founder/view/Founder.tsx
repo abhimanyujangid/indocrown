@@ -24,7 +24,7 @@ export default function Founder({ dict }: FounderProps) {
   if (!section) return null;
 
   return (
-    <Box component="section" id="founder" sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'column', lg: 'row' }, my: { xs: 6, md: 10 } }}>
+    <Box component="section" id="founder" sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'column', lg: 'row' }, my: { xs: 4, md: 6 } }}>
       
       {/* Left Half (Image) */}
       <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
@@ -40,7 +40,7 @@ export default function Founder({ dict }: FounderProps) {
             maxWidth: { lg: 568 }, 
             // Margin/padding left to align with container on smaller screens
             pl: { xs: 2, sm: 3, md: 4, xl: 0 }, 
-            minHeight: { xs: 350, md: 400, lg: 450 },
+            minHeight: { xs: 300, md: 350, lg: 380 },
             position: 'relative',
             borderTopLeftRadius: { lg: 16 },
             borderBottomLeftRadius: { lg: 16 },
@@ -99,11 +99,11 @@ export default function Founder({ dict }: FounderProps) {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          p: { xs: 4, sm: 5, md: 6, lg: 8 } 
+          p: { xs: 3, sm: 4, md: 5, lg: 6 } 
         }}
       >
-        <Box sx={{ maxWidth: 600 , display: "flex", flexDirection: "row", gap: 3,}}>
-          <Box sx={{ color: 'rgba(255,255,255,0.3)' }}>
+        <Box sx={{ maxWidth: 600 , display: "flex", flexDirection: "row", gap: 2,}}>
+          <Box sx={{ color: 'rgba(255,255,255,0.3)', mt: 1 }}>
             <QuoteIcon />
           </Box>
           <Typography 
@@ -111,10 +111,10 @@ export default function Founder({ dict }: FounderProps) {
             sx={{ 
               fontWeight: 600, 
               lineHeight: 1.2,
-              mb: 6,
-              marginTop: 2,
+              mb: 4,
+              marginTop: 1,
               color: 'common.white',
-              fontSize: { xs: '1.5rem', md: '1.75rem', lg: '2rem' }
+              fontSize: { xs: '1.25rem', md: '1.5rem', lg: '1.75rem' }
             }}
           >
             {section.quote}
@@ -128,7 +128,7 @@ export default function Founder({ dict }: FounderProps) {
             whiteSpace: 'pre-line',
             lineHeight: 1.1,
             color: 'common.white',
-            fontSize: { xs: '2rem', md: '2.5rem', lg: '3rem' }
+            fontSize: { xs: '1.75rem', md: '2rem', lg: '2.5rem' }
           }}
         >
           {section.name}
