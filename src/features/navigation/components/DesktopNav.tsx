@@ -4,6 +4,7 @@ import Stack from '@mui/material/Stack';
 import AnimatedButton from '@/src/components/AnimatedButton';
 import LanguageSwitcher from '@/src/components/LanguageSwitcher';
 import { ChevronDownIcon, LeafGlyph } from './NavIcons';
+import NavItemLink from './NavItemLink';
 
 import type { NavItem, NavbarProps } from '../types';
 
@@ -16,23 +17,7 @@ export default function DesktopNav({ dict, locale, navItems }: DesktopNavProps) 
     <>
       <Stack direction="row" spacing={3} sx={{ flex: 1, display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'center' }}>
         {navItems.map((item) => (
-          <Link
-            key={item.label}
-            href={item.href}
-            underline="none"
-            sx={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 0.25,
-              color: 'common.white',
-              fontWeight: 500,
-              fontSize: '0.9375rem',
-              '&:hover': { color: 'rgba(255,255,255,0.85)' },
-            }}
-          >
-            {item.label}
-            {item.chevron ? <ChevronDownIcon /> : null}
-          </Link>
+          <NavItemLink key={item.label} item={item} />
         ))}
       </Stack>
 

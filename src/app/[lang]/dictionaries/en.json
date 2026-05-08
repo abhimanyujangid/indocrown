@@ -17,5 +17,15 @@
     "cta": "Start growing with us",
     "coords": "35.6895° N, 139.6917° E",
     "scrollCue": "Start growing with us"
+  },
+  "aboutSection": {
+    "label": "About us",
+    "headline": "We are committed to advancing agriculture.",
+    "chips": [
+      "Sustainable", "Innovative", "Global", "Reliable", "Efficient",
+      "Impactful", "Adaptive", "Collaborative", "Visionary"
+    ],
+    "description": "Our mission is to redefine what's possible in modern farming — creating lasting value for communities, ecosystems, and future generations. Rooted in tradition, driven by innovation — we grow more than crops, we grow impact.",
+    "cta": "About the company"
   }
 }

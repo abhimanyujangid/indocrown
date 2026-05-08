@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 import { getDictionary, hasLocale } from './dictionaries';
 import type { Locale } from '../../i18n/config';
 import Navbar from '@/src/features/navigation/view/Navbar';
-import Hero from '@/src/components/Hero';
+import Hero from '@/src/features/hero/view/Hero';
+import About from '@/src/features/about/view/About';
 
 type PageProps = {
   params: Promise<{ lang: string }>;
@@ -22,7 +23,8 @@ export default async function HomePage({ params }: PageProps) {
   return (
     <>
       <Navbar dict={dict} locale={locale} />
-      <Hero />
+      <Hero dict={dict} />
+      <About dict={dict} />
     </>
   );
 }
