@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "next-seed",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,15 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@motionone/utils": "^10.18.0",
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.14.0",
-    "motion": "^12.38.0",
-    "next": "16.2.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.0.1",
+    "@mui/material-nextjs": "^9.0.1",
+    "framer-motion": "^12.38.0",
+    "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "tailwind-merge": "^3.5.0",
-    "vaul": "^1.1.2"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -25,7 +24,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.4",
+    "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
