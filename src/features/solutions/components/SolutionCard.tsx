@@ -41,7 +41,7 @@ export default function SolutionCard({ title, description, image }: SolutionCard
         sx={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(10,90,48,0.85) 100%)',
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(10, 90, 49, 0.71) 100%)',
           zIndex: 1,
         }}
       />

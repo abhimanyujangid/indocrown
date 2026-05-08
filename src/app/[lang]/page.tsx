@@ -5,8 +5,10 @@ import type { Locale } from '../../i18n/config';
 import Navbar from '@/src/features/navigation/view/Navbar';
 import Hero from '@/src/features/hero/view/Hero';
 import About from '@/src/features/about/view/About';
-
 import Solutions from '@/src/features/solutions/view/Solutions';
+import Sustainability from '@/src/features/sustainability/view/Sustainability';
+import WhyChooseUs from '@/src/features/whyChooseUs/view/WhyChooseUs';
+import Founder from '@/src/features/founder/view/Founder';
 
 type PageProps = {
   params: Promise<{ lang: string }>;
@@ -28,6 +30,9 @@ export default async function HomePage({ params }: PageProps) {
       <Hero dict={dict} />
       <About dict={dict} />
       <Solutions dict={dict} />
+      <Sustainability dict={dict} />
+      <WhyChooseUs dict={dict} />
+      <Founder dict={dict} />
     </>
   );
 }

@@ -22,8 +22,15 @@
     "label": "About us",
     "headline": "We are committed to advancing agriculture.",
     "chips": [
-      "Sustainable", "Innovative", "Global", "Reliable", "Efficient",
-      "Impactful", "Adaptive", "Collaborative", "Visionary"
+      "Sustainable",
+      "Innovative",
+      "Global",
+      "Reliable",
+      "Efficient",
+      "Impactful",
+      "Adaptive",
+      "Collaborative",
+      "Visionary"
     ],
     "description": "Our mission is to redefine what's possible in modern farming — creating lasting value for communities, ecosystems, and future generations. Rooted in tradition, driven by innovation — we grow more than crops, we grow impact.",
     "cta": "About the company"
@@ -37,18 +44,61 @@
       {
         "title": "Precision farming",
         "description": "We use data-driven insights and smart technology to help farmers monitor soil health.",
-        "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad849?w=600&auto=format&fit=crop&q=80"
+        "image": "solutions/solutions1.jpg"
       },
       {
         "title": "Sustainable irrigation",
         "description": "Our advanced irrigation systems reduce water waste and support efficient crop hydration.",
-        "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&auto=format&fit=crop&q=80"
+        "image": "/solutions/solutions2.jpg"
       },
       {
         "title": "Supply chain support",
         "description": "We provide tools and expertise to streamline post-harvest logistics, ensuring fresh, high-quality products.",
-        "image": "https://images.unsplash.com/photo-1592982537447-6f296d9f8266?w=600&auto=format&fit=crop&q=80"
+        "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&auto=format&fit=crop&q=80"
       }
     ]
+  },
+  "sustainabilitySection": {
+    "headline": "Sustainability at our core.",
+    "description": "We're committed to farming that respects the land, preserves resources, and supports future generations.",
+    "cta": "Let's work together",
+    "image": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1000&auto=format&fit=crop&q=80",
+    "initiatives": [
+      {
+        "title": "Composting",
+        "description": "Reducing waste and returning nutrients to the soil"
+      },
+      {
+        "title": "Water-saving systems",
+        "description": "Smart irrigation that conserves every drop"
+      }
+    ]
+  },
+  "whyChooseUsSection": {
+    "label": "Why choose us",
+    "headline": "We're more than just a farm — we're your trusted partner in sustainable agriculture.",
+    "cards": [
+      {
+        "title": "Sustainable Practices",
+        "description": "From pesticide-free farming to smart water use, we're committed to methods that respect the planet and future generations.",
+        "image": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400&auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Global Expertise",
+        "description": "Years of international experience delivering scalable agricultural solutions across diverse climates and regions.",
+        "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Trusted by Thousands",
+        "description": "Farmers, distributors, and partners worldwide rely on us for quality, reliability, and long-term success.",
+        "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&auto=format&fit=crop&q=80"
+      }
+    ]
+  },
+  "founderSection": {
+    "role": "Founder & CEO",
+    "name": "James\nDer Linden",
+    "quote": "\"We started this journey with a simple belief — that farming can feed the world without harming it. Every seed we plant, every partnership we build, reflects our commitment to sustainability, innovation, and people.\"",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80"
   }
 }

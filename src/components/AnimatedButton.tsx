@@ -6,30 +6,32 @@ import { useTheme } from '@mui/material/styles';
 import { motion } from 'framer-motion';
 
 export type AnimatedButtonProps = ButtonProps & {
-  hoverBgColor?: string;
-  hoverColor?: string;
+  btnVariant?: 1 | 2;
 };
 
 export default function AnimatedButton({
   children,
   sx,
   fullWidth,
-  hoverBgColor,
-  hoverColor,
+  btnVariant = 1,
   ...props
 }: AnimatedButtonProps) {
   const theme = useTheme();
+
+  // Determine styling based on variant
+  const isV1 = btnVariant === 1;
+
+  // Variant 1: Initial Blur/White, Hover White bg + Primary text
+  // Variant 2: Initial Primary bg, Hover Gold gradient bg + Primary text
   
-  // Resolve theme colors if dot notation is used (e.g. 'primary.dark'), otherwise use raw value or fallback to white
-  let fill = hoverBgColor || 'white';
-  if (hoverBgColor?.includes('.')) {
-    const [path1, path2] = hoverBgColor.split('.');
-    // @ts-ignore - dynamic theme resolution
-    if (theme.palette[path1] && theme.palette[path1][path2]) {
-      // @ts-ignore
-      fill = theme.palette[path1][path2];
-    }
-  }
+  const initialBg = isV1 ? 'rgba(255,255,255,0.14)' : theme.palette.primary.main;
+  const initialColor = 'common.white';
+  const initialBorder = isV1 ? '1px solid rgba(255,255,255,0.35)' : `1px solid ${theme.palette.primary.main}`;
+  
+  const hoverFill = isV1 ? '#FFFFFF' : 'linear-gradient(135deg, #d4af37 0%, #fffacd 50%, #d4af37 100%)';
+  const hoverColor = theme.palette.primary.main;
+  
+  const animationDuration = isV1 ? 0.45 : 0.25;
 
   return (
     <motion.div
@@ -51,7 +53,7 @@ export default function AnimatedButton({
           hover: { scaleY: 1 },
         }}
         transition={{
-          duration: 0.45,
+          duration: animationDuration,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
         style={{
@@ -59,7 +61,7 @@ export default function AnimatedButton({
           position: 'absolute',
           inset: 0,
           transformOrigin: 'bottom',
-          background: fill,
+          background: hoverFill,
           zIndex: 0,
         }}
       />
@@ -71,14 +73,14 @@ export default function AnimatedButton({
           zIndex: 1,
           borderRadius: 999,
           overflow: 'hidden',
-          border: '1px solid rgba(255,255,255,0.35)',
-          color: 'common.white',
-          bgcolor: 'rgba(255,255,255,0.14)',
+          border: initialBorder,
+          color: initialColor,
+          bgcolor: initialBg,
           px: 3,
           py: 2,
           '&:hover': {
             bgcolor: 'transparent',
-            color: hoverColor || 'common.black',
+            color: hoverColor,
             borderColor: 'transparent',
           },
           ...sx,

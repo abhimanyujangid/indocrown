@@ -16,12 +16,20 @@ type SolutionsProps = {
   dict: Dictionary;
 };
 
-// Individual scroll reveal animation config
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 30 },
+const leftVariants: Variants = {
+  hidden: { opacity: 0, x: -50 },
   show: { 
     opacity: 1, 
-    y: 0, 
+    x: 0, 
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } 
+  },
+};
+
+const rightVariants: Variants = {
+  hidden: { opacity: 0, x: 50 },
+  show: { 
+    opacity: 1, 
+    x: 0, 
     transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] } 
   },
 };
@@ -45,7 +53,7 @@ export default function Solutions({ dict }: SolutionsProps) {
           
           {/* Left Column (Sticky or static) */}
           <Box sx={{ width: { xs: '100%', lg: '30%' }, flexShrink: 0, pt: { lg: 4 } }}>
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+            <motion.div variants={leftVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Box
                 sx={{
                   display: 'inline-flex',
@@ -68,28 +76,20 @@ export default function Solutions({ dict }: SolutionsProps) {
               </Box>
             </motion.div>
 
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+            <motion.div variants={leftVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Typography variant="h2" sx={{ mb: 4 }}>
                 {section.headline}
               </Typography>
             </motion.div>
 
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+            <motion.div variants={leftVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Typography variant="body1" sx={{ color: 'text.secondary', mb: 5, fontSize: '1.125rem' }}>
                 {section.description}
               </Typography>
             </motion.div>
 
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
-              <AnimatedButton
-                hoverBgColor="primary.dark"
-                hoverColor="common.white"
-                sx={{
-                  bgcolor: 'primary.main',
-                  color: 'common.white',
-                  borderColor: 'primary.main',
-                }}
-              >
+            <motion.div variants={leftVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+              <AnimatedButton btnVariant={2}>
                 {section.cta}
               </AnimatedButton>
             </motion.div>
@@ -123,7 +123,7 @@ export default function Solutions({ dict }: SolutionsProps) {
             {section.cards.map((card: any, index: number) => (
               <Box key={card.title} sx={{ position: 'relative', zIndex: 1 }}>
                 <motion.div 
-                  variants={itemVariants} 
+                  variants={rightVariants} 
                   initial="hidden" 
                   whileInView="show" 
                   viewport={{ once: true, margin: "0px 0px -50px 0px" }}
