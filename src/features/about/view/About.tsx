@@ -42,7 +42,7 @@ export default function About({ dict }: AboutProps) {
         >
           
           {/* Left Column */}
-          <Box sx={{ flex: 1, minWidth: 0, pl: { md: 8 } }}>
+          <Box sx={{ flex: 1, minWidth: 0}}>
             {/* Label Pill */}
             <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Box

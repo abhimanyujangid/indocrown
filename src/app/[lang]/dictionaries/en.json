@@ -27,5 +27,28 @@
     ],
     "description": "Our mission is to redefine what's possible in modern farming — creating lasting value for communities, ecosystems, and future generations. Rooted in tradition, driven by innovation — we grow more than crops, we grow impact.",
     "cta": "About the company"
+  },
+  "solutionsSection": {
+    "label": "Our solutions",
+    "headline": "Innovating the way you grow.",
+    "description": "We deliver end-to-end agricultural solutions that combine traditional farming wisdom with modern innovation.",
+    "cta": "Discover our solutions",
+    "cards": [
+      {
+        "title": "Precision farming",
+        "description": "We use data-driven insights and smart technology to help farmers monitor soil health.",
+        "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad849?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Sustainable irrigation",
+        "description": "Our advanced irrigation systems reduce water waste and support efficient crop hydration.",
+        "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&auto=format&fit=crop&q=80"
+      },
+      {
+        "title": "Supply chain support",
+        "description": "We provide tools and expertise to streamline post-harvest logistics, ensuring fresh, high-quality products.",
+        "image": "https://images.unsplash.com/photo-1592982537447-6f296d9f8266?w=600&auto=format&fit=crop&q=80"
+      }
+    ]
   }
 }
