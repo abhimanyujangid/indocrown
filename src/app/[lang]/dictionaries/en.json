@@ -100,5 +100,11 @@
     "name": "James\nDer Linden",
     "quote": "\"We started this journey with a simple belief — that farming can feed the world without harming it. Every seed we plant, every partnership we build, reflects our commitment to sustainability, innovation, and people.\"",
     "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80"
+  },
+  "ctaSection": {
+    "headline": "Grow something\ngreat together.",
+    "description": "Whether you're a farmer, distributor, or partner, we're here to support your goals with sustainable solutions and global expertise.",
+    "cta": "Let's work together",
+    "tags": ["Driven", "Rooted", "Impactful"]
   }
 }

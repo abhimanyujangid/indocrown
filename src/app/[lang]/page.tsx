@@ -9,6 +9,7 @@ import Solutions from '@/src/features/solutions/view/Solutions';
 import Sustainability from '@/src/features/sustainability/view/Sustainability';
 import WhyChooseUs from '@/src/features/whyChooseUs/view/WhyChooseUs';
 import Founder from '@/src/features/founder/view/Founder';
+import Cta from '@/src/features/cta/view/Cta';
 
 type PageProps = {
   params: Promise<{ lang: string }>;
@@ -33,6 +34,7 @@ export default async function HomePage({ params }: PageProps) {
       <Sustainability dict={dict} />
       <WhyChooseUs dict={dict} />
       <Founder dict={dict} />
+      <Cta dict={dict} />
     </>
   );
 }

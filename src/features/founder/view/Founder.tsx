@@ -24,7 +24,7 @@ export default function Founder({ dict }: FounderProps) {
   if (!section) return null;
 
   return (
-    <Box component="section" id="founder" sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'column', lg: 'row' }, my: { xs: 8, md: 16 } }}>
+    <Box component="section" id="founder" sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'column', lg: 'row' }, my: { xs: 8, md: 14 } }}>
       
       {/* Left Half (Image) */}
       <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
