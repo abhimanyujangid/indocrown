@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     mode: 'light',
-    primary: { main: '#0A5A30' }, // Dark green from the image
+    primary: { main: '#0A5A30', dark: '#084826' }, // Dark green from the image
     secondary: { main: '#F2F2F2' }, // Light gray for pills
     background: {
       default: '#FFFFFF',
@@ -102,13 +102,6 @@ const theme = createTheme({
           borderRadius: 24,
           padding: '10px 24px',
           textTransform: 'none',
-        },
-        containedPrimary: {
-          backgroundColor: '#0A5A30',
-          color: '#FFFFFF',
-          '&:hover': {
-            backgroundColor: '#084826',
-          },
         },
       },
     },

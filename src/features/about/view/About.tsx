@@ -16,14 +16,7 @@ type AboutProps = {
   dict: Dictionary;
 };
 
-const containerVariants: Variants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
+// Individual scroll reveal animation config
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -43,11 +36,6 @@ export default function About({ dict }: AboutProps) {
     <Box component="section" id="about" sx={{ bgcolor: 'common.white', py: { xs: 8, md: 14 } }}>
       <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
         <Stack 
-          component={motion.div}
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
           direction={{ xs: 'column', md: 'row' }} 
           spacing={{ xs: 6, md: 12 }} 
           sx={{ alignItems: 'center' }}
@@ -56,7 +44,7 @@ export default function About({ dict }: AboutProps) {
           {/* Left Column */}
           <Box sx={{ flex: 1, minWidth: 0, pl: { md: 8 } }}>
             {/* Label Pill */}
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Box
                 sx={{
                   display: 'inline-flex',
@@ -80,14 +68,14 @@ export default function About({ dict }: AboutProps) {
             </motion.div>
 
             {/* Headline */}
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Typography variant="h2" sx={{ mb: 5, maxWidth: 600 }}>
                 {aboutSection.headline}
               </Typography>
             </motion.div>
 
             {/* Chips */}
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.5, maxWidth: 500 }}>
                 {aboutSection.chips.map((chip: string) => (
                   <Box
@@ -111,13 +99,13 @@ export default function About({ dict }: AboutProps) {
 
           {/* Right Column */}
           <Box sx={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Typography variant="body1" sx={{ color: 'text.secondary', mb: 5, maxWidth: 560, fontSize: '1.125rem' }}>
                 {aboutSection.description}
               </Typography>
             </motion.div>
 
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
               <Box>
                 {/* For the solid green button styling */}
                 <AnimatedButton
