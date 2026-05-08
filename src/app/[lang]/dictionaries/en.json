@@ -106,5 +106,17 @@
     "description": "Whether you're a farmer, distributor, or partner, we're here to support your goals with sustainable solutions and global expertise.",
     "cta": "Let's work together",
     "tags": ["Driven", "Rooted", "Impactful"]
+  },
+  "footerSection": {
+    "tagline": "Redefining agriculture\nat a global scale.",
+    "linksTitle": "Information",
+    "links": [
+      { "label": "Home", "href": "#" },
+      { "label": "About", "href": "#about" },
+      { "label": "Gallery", "href": "#" },
+      { "label": "Contact us", "href": "#" }
+    ],
+    "socials": ["Instagram", "YouTube", "Facebook"],
+    "copyright": "© 2026 Freshfield Group. All Rights Reserved."
   }
 }

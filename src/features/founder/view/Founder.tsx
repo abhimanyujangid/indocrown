@@ -24,7 +24,7 @@ export default function Founder({ dict }: FounderProps) {
   if (!section) return null;
 
   return (
-    <Box component="section" id="founder" sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'column', lg: 'row' }, my: { xs: 8, md: 14 } }}>
+    <Box component="section" id="founder" sx={{ width: '100%', display: 'flex', flexDirection: { xs: 'column', lg: 'row' }, my: { xs: 6, md: 10 } }}>
       
       {/* Left Half (Image) */}
       <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
@@ -37,10 +37,10 @@ export default function Founder({ dict }: FounderProps) {
           sx={{ 
             width: '100%', 
             // Max width matches exactly half of an 'xl' container (1536/2)
-            maxWidth: { lg: 768 }, 
+            maxWidth: { lg: 568 }, 
             // Margin/padding left to align with container on smaller screens
             pl: { xs: 2, sm: 3, md: 4, xl: 0 }, 
-            minHeight: { xs: 400, md: 500, lg: 600 },
+            minHeight: { xs: 350, md: 400, lg: 450 },
             position: 'relative',
             borderTopLeftRadius: { lg: 16 },
             borderBottomLeftRadius: { lg: 16 },
@@ -99,7 +99,7 @@ export default function Founder({ dict }: FounderProps) {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          p: { xs: 4, sm: 6, md: 8, lg: 10 } 
+          p: { xs: 4, sm: 5, md: 6, lg: 8 } 
         }}
       >
         <Box sx={{ maxWidth: 600 , display: "flex", flexDirection: "row", gap: 3,}}>
@@ -110,9 +110,9 @@ export default function Founder({ dict }: FounderProps) {
             variant="h6" 
             sx={{ 
               fontWeight: 600, 
-              lineHeight: 1.1,
-              mb: 10,
-              marginTop:6,
+              lineHeight: 1.2,
+              mb: 6,
+              marginTop: 2,
               color: 'common.white',
               fontSize: { xs: '1.5rem', md: '1.75rem', lg: '2rem' }
             }}
@@ -122,12 +122,13 @@ export default function Founder({ dict }: FounderProps) {
         </Box>
 
         <Typography 
-          variant="h1" 
+          variant="h2" 
           sx={{ 
             fontWeight: 700,
             whiteSpace: 'pre-line',
             lineHeight: 1.1,
-            color: 'common.white'
+            color: 'common.white',
+            fontSize: { xs: '2rem', md: '2.5rem', lg: '3rem' }
           }}
         >
           {section.name}

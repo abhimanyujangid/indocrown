@@ -19,7 +19,7 @@ export default function Cta({ dict }: CtaProps) {
 
   return (
     <Box component="section" id="cta" sx={{ width: '100%', py: { xs: 8, md: 12 }, bgcolor: 'common.white' }}>
-      <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+      <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
         <Box 
           component={motion.div}
           initial={{ opacity: 0, y: 50 }}
