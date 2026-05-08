@@ -105,18 +105,60 @@
     "headline": "Grow something\ngreat together.",
     "description": "Whether you're a farmer, distributor, or partner, we're here to support your goals with sustainable solutions and global expertise.",
     "cta": "Let's work together",
-    "tags": ["Driven", "Rooted", "Impactful"]
+    "tags": [
+      "Driven",
+      "Rooted",
+      "Impactful"
+    ]
   },
   "footerSection": {
     "tagline": "Redefining agriculture\nat a global scale.",
     "linksTitle": "Information",
     "links": [
-      { "label": "Home", "href": "#" },
-      { "label": "About", "href": "#about" },
-      { "label": "Gallery", "href": "#" },
-      { "label": "Contact us", "href": "#" }
+      {
+        "label": "Home",
+        "href": "#"
+      },
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Gallery",
+        "href": "#"
+      },
+      {
+        "label": "Contact us",
+        "href": "#"
+      }
     ],
-    "socials": ["Instagram", "YouTube", "Facebook"],
+    "socials": [
+      "Instagram",
+      "YouTube",
+      "Facebook"
+    ],
     "copyright": "© 2026 Freshfield Group. All Rights Reserved."
+  },
+  "contactHero": {
+    "tag": "Contact us",
+    "headline": "Let's grow something\ngreat together",
+    "description": "Our team is here to help — whether you're a grower, partner, or simply curious about what we do.",
+    "image": "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "contactForm": {
+    "tag": "Get in touch",
+    "headline": "We look forward to\nhearing from you.",
+    "description": "We're committed to clear communication, fast responses, and personalized support every step of the way.",
+    "address": "14 Tottenham Road, London, England",
+    "phone": "+1 212 425 8617",
+    "email": "information@office.com",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Your phone",
+      "email": "Your email",
+      "message": "Your text",
+      "submit": "Submit"
+    }
   }
 }
