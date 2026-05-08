@@ -1,11 +1,9 @@
 {
   "brand": "Freshfield Group",
   "nav": {
-    "demos": "Demos",
     "about": "About Us",
-    "services": "Services",
-    "pricing": "Pricing",
-    "allPages": "All Pages",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
     "cta": "Let's work together"
   },
   "hero": {
