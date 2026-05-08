@@ -1,140 +1,113 @@
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
-  colorSchemes: {
-    // Keep both schemes available for MUI's mode API, but preserve
-    // the same dark-canvas visual language in both.
-    light: {
-      palette: {
-        mode: 'light',
-        primary: { main: '#8A5B1F' },
-        secondary: { main: '#B8B2A4' },
-        background: {
-          default: '#F5F0E8',
-          paper: '#FFF8EC',
-        },
-        text: {
-          primary: '#1F160D',
-          secondary: '#6E6B62',
-        },
-        divider: 'rgba(31,22,13,0.18)',
-      },
+  palette: {
+    mode: 'light',
+    primary: { main: '#0A5A30' }, // Dark green from the image
+    secondary: { main: '#F2F2F2' }, // Light gray for pills
+    background: {
+      default: '#FFFFFF',
+      paper: '#FFFFFF',
     },
-    dark: {
-      palette: {
-        mode: 'dark',
-        primary: { main: '#5C7A2E' },
-        secondary: { main: '#B8B2A4' },
-        background: {
-          default: '#0C1009',
-          paper: '#151C0F',
-        },
-        text: {
-          primary: '#F5F0E8',
-          secondary: '#B8B2A4',
-        },
-        divider: 'rgba(255,255,255,0.10)',
-      },
+    text: {
+      primary: '#111811',
+      secondary: '#4A554A',
     },
-  },
-  cssVariables: {
-    colorSchemeSelector: 'class',
+    divider: 'rgba(0,0,0,0.08)',
   },
   shape: {
-    borderRadius: 0,
+    borderRadius: 8,
   },
   spacing: 8,
   typography: {
     fontFamily: `'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif`,
     h1: {
-      fontFamily: `'Cormorant Garamond', 'Playfair Display', serif`,
-      fontWeight: 700,
-      fontSize: 'clamp(3rem, 7vw, 6.5rem)',
-      lineHeight: 0.95,
-      letterSpacing: '-0.03em',
-      color: '#F5F0E8',
+      fontFamily: `'Inter', 'DM Sans', sans-serif`,
+      fontWeight: 500,
+      fontSize: 'clamp(2.5rem, 4vw, 3.5rem)',
+      lineHeight: 1.1,
+      letterSpacing: '-0.02em',
+      color: '#111811',
     },
     h2: {
-      fontFamily: `'Cormorant Garamond', 'Playfair Display', serif`,
-      fontWeight: 700,
-      fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
-      lineHeight: 1.05,
+      fontFamily: `'Inter', 'DM Sans', sans-serif`,
+      fontWeight: 500,
+      fontSize: 'clamp(2rem, 3.5vw, 3rem)',
+      lineHeight: 1.1,
       letterSpacing: '-0.02em',
-      color: '#F5F0E8',
+      color: '#111811',
     },
     h3: {
-      fontFamily: `'Cormorant Garamond', 'Playfair Display', serif`,
-      fontWeight: 700,
-      fontSize: 'clamp(2rem, 4vw, 3.25rem)',
-      lineHeight: 1.1,
+      fontFamily: `'Inter', 'DM Sans', sans-serif`,
+      fontWeight: 500,
+      fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
+      lineHeight: 1.2,
       letterSpacing: '-0.01em',
-      color: '#F5F0E8',
+      color: '#111811',
     },
     h4: {
-      fontFamily: `'Cormorant Garamond', 'Playfair Display', serif`,
-      fontWeight: 600,
-      fontSize: 'clamp(1.75rem, 2.5vw, 2.25rem)',
+      fontFamily: `'Inter', 'DM Sans', sans-serif`,
+      fontWeight: 500,
+      fontSize: 'clamp(1.5rem, 2vw, 2rem)',
       lineHeight: 1.2,
-      color: '#F5F0E8',
+      color: '#111811',
     },
     body1: {
       fontSize: '1rem',
-      lineHeight: 1.65,
-      fontWeight: 400,
-      color: '#F5F0E8',
-    },
-    body2: {
-      fontSize: '0.9375rem',
       lineHeight: 1.6,
       fontWeight: 400,
-      color: '#B8B2A4',
+      color: '#4A554A',
+    },
+    body2: {
+      fontSize: '0.875rem',
+      lineHeight: 1.6,
+      fontWeight: 400,
+      color: '#4A554A',
     },
     button: {
       fontSize: '0.9375rem',
-      fontWeight: 500,
-      letterSpacing: '0.04em',
+      fontWeight: 600,
+      letterSpacing: '0.01em',
       textTransform: 'none',
     },
     caption: {
       fontSize: '0.8125rem',
       lineHeight: 1.5,
-      letterSpacing: '0.02em',
-      color: '#6E6B62',
+      color: '#4A554A',
     },
     overline: {
       fontSize: '0.75rem',
       fontWeight: 600,
       lineHeight: 1.2,
-      letterSpacing: '0.12em',
+      letterSpacing: '0.05em',
       textTransform: 'uppercase',
-      color: '#B8B2A4',
+      color: '#4A554A',
     },
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          backgroundColor: '#0C1009',
-          color: '#F5F0E8',
+          backgroundColor: '#FFFFFF',
+          color: '#111811',
         },
       },
     },
     MuiButton: {
       defaultProps: {
-        variant: 'outlined',
-        color: 'inherit',
+        disableElevation: true,
       },
       styleOverrides: {
         root: {
-          borderRadius: 0,
-          padding: '14px 28px',
-          borderColor: 'rgba(255,255,255,0.70)',
-          color: '#F5F0E8',
+          borderRadius: 24,
+          padding: '10px 24px',
           textTransform: 'none',
+        },
+        containedPrimary: {
+          backgroundColor: '#0A5A30',
+          color: '#FFFFFF',
           '&:hover': {
-            borderColor: '#5C7A2E',
-            color: '#5C7A2E',
-            backgroundColor: 'transparent',
+            backgroundColor: '#084826',
           },
         },
       },
@@ -142,17 +115,17 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: 0,
-          backgroundColor: '#151C0F',
+          borderRadius: 16,
+          backgroundColor: '#FFFFFF',
           boxShadow: 'none',
-          border: '1px solid rgba(255,255,255,0.10)',
+          border: '1px solid rgba(0,0,0,0.08)',
         },
       },
     },
     MuiPaper: {
       styleOverrides: {
         root: {
-          borderRadius: 0,
+          borderRadius: 16,
           boxShadow: 'none',
         },
       },
@@ -160,11 +133,11 @@ const theme = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
-          color: '#F5F0E8',
+          color: '#111811',
           textDecoration: 'none',
           transition: 'color 180ms ease',
           '&:hover': {
-            color: '#5C7A2E',
+            color: '#0A5A30',
           },
         },
       },

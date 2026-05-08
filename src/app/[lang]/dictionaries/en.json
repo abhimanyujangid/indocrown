@@ -1,0 +1,23 @@
+{
+  "brand": "Freshfield Group",
+  "nav": {
+    "demos": "Demos",
+    "about": "About Us",
+    "services": "Services",
+    "pricing": "Pricing",
+    "allPages": "All Pages",
+    "cta": "Let's work together"
+  },
+  "hero": {
+    "chips": {
+      "driven": "Driven",
+      "rooted": "Rooted",
+      "impactful": "Impactful"
+    },
+    "tagline": "Through sustainable farming and smart collaboration, we grow more than crops — we grow impact.",
+    "headline": "Redefining agriculture at a global scale.",
+    "cta": "Start growing with us",
+    "coords": "35.6895° N, 139.6917° E",
+    "scrollCue": "Start growing with us"
+  }
+}
