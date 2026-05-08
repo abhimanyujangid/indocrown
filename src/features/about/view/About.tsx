@@ -83,14 +83,12 @@ export default function About({ dict }: AboutProps) {
               {/* For the solid green button styling */}
               <AnimatedButton
                 startIcon={<LeafGlyph size={18} />}
+                hoverBgColor="primary.dark"
+                hoverColor="common.white"
                 sx={{
                   bgcolor: 'primary.main',
                   color: 'common.white',
                   borderColor: 'primary.main',
-                  '&:hover': {
-                    bgcolor: 'primary.dark',
-                    color: 'common.white',
-                  }
                 }}
               >
                 {aboutSection.cta}

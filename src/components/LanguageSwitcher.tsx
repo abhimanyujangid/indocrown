@@ -37,8 +37,8 @@ export default function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
       size="small"
       sx={{
         '& .MuiToggleButton-root': {
-          px: 1.25,
-          py: 0.25,
+          px: 1.5,
+          py: 2,
           fontSize: '0.8125rem',
           fontWeight: 600,
           color: 'common.white',

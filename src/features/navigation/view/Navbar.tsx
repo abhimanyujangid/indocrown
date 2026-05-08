@@ -34,7 +34,8 @@ export default function Navbar({ dict, locale }: NavbarProps) {
         bgcolor: trigger ? theme.palette.primary.main : 'transparent',
         transition: 'background-color 0.3s ease, box-shadow 0.3s ease',
         borderBottom: 'none',
-        color: 'common.white' 
+        color: 'common.white', 
+        borderRadius:0
       }}
     >
       <Toolbar sx={{ py: 1.5, maxWidth: 'xl', width: '100%', mx: 'auto', px: { xs: 2, sm: 3, md: 4 } }}>

@@ -18,6 +18,7 @@ export default function NavItemLink({ item }: NavItemLinkProps) {
     <MotionLink
       href={item.href}
       underline="none"
+      color="inherit"
       initial="initial"
       whileHover="hover"
       sx={{
@@ -30,6 +31,9 @@ export default function NavItemLink({ item }: NavItemLinkProps) {
         fontSize: '0.9375rem',
         textDecoration: 'none',
         overflow: 'visible',
+        '&:hover': {
+          color: 'common.white',
+        },
       }}
     >
       <Box sx={{ position: 'relative', overflow: 'hidden', display: 'flex' }}>

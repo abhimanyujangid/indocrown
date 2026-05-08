@@ -1,17 +1,35 @@
 'use client';
 
 import Button, { type ButtonProps } from '@mui/material/Button';
+import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 import { motion } from 'framer-motion';
+
+export type AnimatedButtonProps = ButtonProps & {
+  hoverBgColor?: string;
+  hoverColor?: string;
+};
 
 export default function AnimatedButton({
   children,
   sx,
   fullWidth,
+  hoverBgColor,
+  hoverColor,
   ...props
-}: ButtonProps) {
+}: AnimatedButtonProps) {
   const theme = useTheme();
-  const fill = theme.palette.primary.main;
+  
+  // Resolve theme colors if dot notation is used (e.g. 'primary.dark'), otherwise use raw value or fallback to white
+  let fill = hoverBgColor || 'white';
+  if (hoverBgColor?.includes('.')) {
+    const [path1, path2] = hoverBgColor.split('.');
+    // @ts-ignore - dynamic theme resolution
+    if (theme.palette[path1] && theme.palette[path1][path2]) {
+      // @ts-ignore
+      fill = theme.palette[path1][path2];
+    }
+  }
 
   return (
     <motion.div
@@ -57,19 +75,36 @@ export default function AnimatedButton({
           color: 'common.white',
           bgcolor: 'rgba(255,255,255,0.14)',
           px: 3,
-          py:2,
+          py: 2,
           '&:hover': {
-            borderColor: 'transparent',
             bgcolor: 'transparent',
-            color:
-              theme.palette.mode === 'dark'
-                ? theme.palette.background.default
-                : theme.palette.background.paper,
+            color: hoverColor || 'common.black',
+            borderColor: 'transparent',
           },
           ...sx,
         }}
       >
-        {children}
+        <Box sx={{ position: 'relative', overflow: 'hidden', display: 'flex', width: '100%', justifyContent: 'center' }}>
+          <motion.div
+            variants={{
+              rest: { y: 0 },
+              hover: { y: '-100%' },
+            }}
+            transition={{ duration: 0.3, ease: [0.25, 0.8, 0.25, 1] }}
+          >
+            {children}
+          </motion.div>
+          <motion.div
+            variants={{
+              rest: { y: '100%' },
+              hover: { y: 0 },
+            }}
+            transition={{ duration: 0.3, ease: [0.25, 0.8, 0.25, 1] }}
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          >
+            {children}
+          </motion.div>
+        </Box>
       </Button>
     </motion.div>
   );
