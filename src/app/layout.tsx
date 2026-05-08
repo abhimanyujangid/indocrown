@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ModeSwitch from "../components/ModeSwitch";
-import { CssBaseline, InitColorSchemeScript, ThemeProvider } from "@mui/material";
-import theme from "../theme";
+import { InitColorSchemeScript } from "@mui/material";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
+import AppProviders from "../components/AppProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,12 +25,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <body>
         <InitColorSchemeScript attribute="class" />
-          <ThemeProvider theme={theme}>
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <CssBaseline />
-            <ModeSwitch />
-            {props.children}
-          </ThemeProvider>
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <AppProviders>{props.children}</AppProviders>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

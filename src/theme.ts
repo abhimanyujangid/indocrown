@@ -1,4 +1,3 @@
-'use client';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -8,17 +7,17 @@ const theme = createTheme({
     light: {
       palette: {
         mode: 'light',
-        primary: { main: '#5C7A2E' },
+        primary: { main: '#8A5B1F' },
         secondary: { main: '#B8B2A4' },
         background: {
-          default: '#0C1009',
-          paper: '#151C0F',
+          default: '#F5F0E8',
+          paper: '#FFF8EC',
         },
         text: {
-          primary: '#F5F0E8',
-          secondary: '#B8B2A4',
+          primary: '#1F160D',
+          secondary: '#6E6B62',
         },
-        divider: 'rgba(255,255,255,0.10)',
+        divider: 'rgba(31,22,13,0.18)',
       },
     },
     dark: {

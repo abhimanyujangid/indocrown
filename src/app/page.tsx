@@ -1,5 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
-import Image from "next/image";
+import { Box, Button, Container, Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -13,6 +12,9 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
+        <Button variant="contained" color="primary">
+          Click me
+        </Button>
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
           Material UI - Next.js example in TypeScript
         </Typography>
