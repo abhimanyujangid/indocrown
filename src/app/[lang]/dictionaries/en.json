@@ -139,6 +139,21 @@
     ],
     "copyright": "© 2026 Freshfield Group. All Rights Reserved."
   },
+  "galleryHero": {
+    "tag": "Gallery",
+    "headline": "Moments that tell our story.",
+    "description": "Welcome to our gallery — a visual journey through the fields, people, and innovations that define our work.",
+    "image": "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "galleryNav": {
+    "images": "Images",
+    "video": "Video"
+  },
+  "galleryVideo": {
+    "playVideo": "Play video",
+    "closeVideo": "Close video",
+    "noVideos": "No videos to show yet."
+  },
   "contactHero": {
     "tag": "Contact us",
     "headline": "Let's grow something\ngreat together",

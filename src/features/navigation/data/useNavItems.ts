@@ -5,7 +5,7 @@ export function getNavItems(dict: Dictionary, locale?: 'en' | 'hi'): NavItem[] {
   const currentLocale = locale;
   return [
     { label: dict.nav.about, href: '#about', chevron: false },
-    { label: dict.nav.gallery, href: '/gallery', chevron: false },
+    { label: dict.nav.gallery, href: '/gallery/images', chevron: false },
     { label: dict.nav.contact, href: `/contact-us`, chevron: false },
   ];
 }

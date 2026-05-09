@@ -139,6 +139,21 @@
     ],
     "copyright": "© 2026 फ्रेशफील्ड ग्रुप। सर्वाधिकार सुरक्षित।"
   },
+  "galleryHero": {
+    "tag": "गैलरी",
+    "headline": "वे पल जो हमारी कहानी बताते हैं।",
+    "description": "हमारी गैलरी में आपका स्वागत है — यह हमारे काम को परिभाषित करने वाले खेतों, लोगों और नवाचारों के माध्यम से एक दृश्य यात्रा है।",
+    "image": "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  "galleryNav": {
+    "images": "छवियाँ",
+    "video": "वीडियो"
+  },
+  "galleryVideo": {
+    "playVideo": "वीडियो चलाएँ",
+    "closeVideo": "वीडियो बंद करें",
+    "noVideos": "अभी दिखाने के लिए कोई वीडियो नहीं है।"
+  },
   "contactHero": {
     "tag": "संपर्क करें",
     "headline": "आइए मिलकर कुछ\nबड़ा उगाएं",
