@@ -114,21 +114,21 @@ export default function Footer({ dict }: FooterProps) {
             </Typography>
             <Stack spacing={2.5}>
               {section.links.map((link: any) => (
-                <Link key={link.label} href={link.href} passHref legacyBehavior>
-                  <Typography 
-                    component="a" 
-                    variant="body2" 
-                    sx={{ 
-                      color: 'text.secondary', 
-                      textDecoration: 'none',
-                      fontWeight: 500,
-                      transition: 'color 0.2s',
-                      '&:hover': { color: 'primary.main' }
-                    }}
-                  >
-                    {link.label}
-                  </Typography>
-                </Link>
+                <Typography 
+                  key={link.label}
+                  component={Link}
+                  href={link.href}
+                  variant="body2" 
+                  sx={{ 
+                    color: 'text.secondary', 
+                    textDecoration: 'none',
+                    fontWeight: 500,
+                    transition: 'color 0.2s',
+                    '&:hover': { color: 'primary.main' }
+                  }}
+                >
+                  {link.label}
+                </Typography>
               ))}
             </Stack>
           </Box>

@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 
-const HERO_VIDEO = 'bg_hero.mp4';
+const HERO_VIDEO = '/bg_hero.mp4';
 
 export default function HeroVideoBackground() {
   return (
