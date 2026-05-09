@@ -18,7 +18,7 @@ import type { NavbarProps } from '../types';
 
 export default function Navbar({ dict, locale }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const navItems = getNavItems(dict);
+  const navItems = getNavItems(dict, locale);
   const theme = useTheme();
 
   const trigger = useScrollTrigger({
@@ -27,15 +27,15 @@ export default function Navbar({ dict, locale }: NavbarProps) {
   });
 
   return (
-    <AppBar 
-      position="fixed" 
-      elevation={trigger ? 4 : 0} 
-      sx={{ 
+    <AppBar
+      position="fixed"
+      elevation={trigger ? 4 : 0}
+      sx={{
         bgcolor: trigger ? theme.palette.primary.main : 'transparent',
         transition: 'background-color 0.3s ease, box-shadow 0.3s ease',
         borderBottom: 'none',
-        color: 'common.white', 
-        borderRadius:0
+        color: 'common.white',
+        borderRadius: 0
       }}
     >
       <Toolbar sx={{ py: 1.5, maxWidth: 'xl', width: '100%', mx: 'auto', px: { xs: 2, sm: 3, md: 4 } }}>

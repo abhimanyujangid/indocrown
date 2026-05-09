@@ -36,18 +36,36 @@ export default function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
       onChange={handleLocale}
       size="small"
       sx={{
+        '& .MuiToggleButtonGroup-grouped': {
+          borderColor: 'rgba(255, 255, 255, 0.4)',
+          borderWidth: '1px',
+          '&:first-of-type': {
+            borderRadius: '24px 0 0 24px',
+            pl: 2.5,
+            pr: 2,
+          },
+          '&:not(:first-of-type)': {
+            borderRadius: '0 24px 24px 0',
+            pl: 2,
+            pr: 2.5,
+          },
+        },
         '& .MuiToggleButton-root': {
-          px: 1.5,
-          py: 2,
-          fontSize: '0.8125rem',
+          py: '8px',
+          fontSize: '0.875rem',
           fontWeight: 600,
           color: 'common.white',
-          borderColor: 'rgba(255,255,255,0.35)',
+          bgcolor: 'rgba(255, 255, 255, 0.05)',
+          backdropFilter: 'blur(8px)',
+          transition: 'all 0.2s',
+          '&:hover': {
+            bgcolor: 'rgba(255, 255, 255, 0.15)',
+          },
           '&.Mui-selected': {
-            bgcolor: 'rgba(255,255,255,0.18)',
+            bgcolor: 'rgba(255, 255, 255, 0.25)',
             color: 'common.white',
             '&:hover': {
-              bgcolor: 'rgba(255,255,255,0.22)',
+              bgcolor: 'rgba(255, 255, 255, 0.3)',
             },
           },
         },
@@ -57,7 +75,7 @@ export default function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
         EN
       </ToggleButton>
       <ToggleButton value="hi" aria-label="Hindi">
-        हिं
+        हि
       </ToggleButton>
     </ToggleButtonGroup>
   );
