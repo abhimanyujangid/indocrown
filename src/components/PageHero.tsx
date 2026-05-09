@@ -5,15 +5,20 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
 
-import { LeafGlyph } from '../../navigation/components/NavIcons';
-import type { Dictionary } from '../../../app/[lang]/dictionaries';
+import { LeafGlyph } from '@/src/features/navigation/components/NavIcons';
 
-type ContactHeroProps = {
-  dict: Dictionary;
+export type PageHeroSectionProps = {
+  tag: string;
+  headline: string;
+  description: string;
+  image: string;
 };
 
-export default function ContactHero({ dict }: ContactHeroProps) {
-  const section = (dict as any).contactHero;
+type PageHeroProps = {
+  section: PageHeroSectionProps;
+};
+
+export default function PageHero({ section }: PageHeroProps) {
   if (!section) return null;
 
   return (
