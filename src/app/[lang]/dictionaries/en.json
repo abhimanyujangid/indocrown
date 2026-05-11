@@ -35,6 +35,14 @@
     "description": "Our mission is to redefine what's possible in modern farming — creating lasting value for communities, ecosystems, and future generations. Rooted in tradition, driven by innovation — we grow more than crops, we grow impact.",
     "cta": "About the company"
   },
+  "aboutPage": {
+    "label": "About us",
+    "headline": "Elevating global farming standards",
+    "subtext": "Freshfield Group is more than a company — we're a movement toward smarter, more sustainable farming.",
+    "image": "/about/hero.png",
+    "chipCta": "Let's work together",
+    "chipPills": ["Driven", "Rooted", "Impactful"]
+  },
   "solutionsSection": {
     "label": "Our solutions",
     "headline": "Innovating the way you grow.",
@@ -121,11 +129,11 @@
       },
       {
         "label": "About",
-        "href": "#about"
+        "href": "/about"
       },
       {
         "label": "Gallery",
-        "href": "#"
+        "href": "/gallery/images"
       },
       {
         "label": "Contact us",

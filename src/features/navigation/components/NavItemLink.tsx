@@ -5,15 +5,18 @@ import Box from '@mui/material/Box';
 import { motion } from 'framer-motion';
 
 import { ChevronDownIcon } from './NavIcons';
-import type { NavItem } from '../types';
+import type { NavItem, NavbarTone } from '../types';
 
 const MotionLink = motion.create(Link);
 
 type NavItemLinkProps = {
   item: NavItem;
+  navTone?: NavbarTone;
 };
 
-export default function NavItemLink({ item }: NavItemLinkProps) {
+export default function NavItemLink({ item, navTone = 'onDark' }: NavItemLinkProps) {
+  const onLight = navTone === 'onLight';
+
   return (
     <MotionLink
       href={item.href}
@@ -26,13 +29,13 @@ export default function NavItemLink({ item }: NavItemLinkProps) {
         display: 'inline-flex',
         alignItems: 'center',
         gap: 0.25,
-        color: 'common.white',
+        color: onLight ? 'text.primary' : 'common.white',
         fontWeight: 500,
         fontSize: '0.9375rem',
         textDecoration: 'none',
         overflow: 'visible',
         '&:hover': {
-          color: 'common.white',
+          color: onLight ? 'primary.main' : 'common.white',
         },
       }}
     >
