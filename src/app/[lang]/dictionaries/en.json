@@ -1,182 +1,195 @@
 {
-  "brand": "Freshfield Group",
+  "brand": "Jangid Agro Industries",
+
   "nav": {
     "about": "About Us",
     "gallery": "Gallery",
     "contact": "Contact Us",
-    "cta": "Let's work together"
+    "cta": "Work With Us"
   },
+
   "hero": {
     "chips": {
-      "driven": "Driven",
-      "rooted": "Rooted",
-      "impactful": "Impactful"
+      "driven": "Reliable",
+      "rooted": "Rural",
+      "impactful": "Powerful"
     },
-    "tagline": "Through sustainable farming and smart collaboration, we grow more than crops — we grow impact.",
-    "headline": "Redefining agriculture at a global scale.",
-    "cta": "Start growing with us",
-    "coords": "35.6895° N, 139.6917° E",
-    "scrollCue": "Start growing with us"
+    "tagline": "Built for Indian farmers with strong engineering, trusted performance, and machines designed for real field conditions.",
+    "headline": "Manufacturing powerful agricultural machinery for modern farming.",
+    "cta": "Explore Our Machines",
+    "coords": "Rajasthan, India",
+    "scrollCue": "Explore Our Machines"
   },
+
   "aboutSection": {
     "label": "About us",
-    "headline": "We are committed to advancing agriculture.",
+    "headline": "We manufacture durable agricultural machinery for Indian farmers.",
     "chips": [
-      "Sustainable",
-      "Innovative",
-      "Global",
       "Reliable",
+      "Strong",
+      "Field-Tested",
       "Efficient",
-      "Impactful",
-      "Adaptive",
-      "Collaborative",
-      "Visionary"
+      "Farmer-Focused",
+      "Affordable",
+      "Durable",
+      "Trusted",
+      "Indian Made"
     ],
-    "description": "Our mission is to redefine what's possible in modern farming — creating lasting value for communities, ecosystems, and future generations. Rooted in tradition, driven by innovation — we grow more than crops, we grow impact.",
-    "cta": "About the company"
+    "description": "Jangid Agro Industries is a trusted agricultural machinery manufacturer based in India. We specialize in tractor-operated farming machines designed to improve productivity, reduce manual labor, and support farmers in villages and rural areas with reliable and long-lasting equipment.",
+    "cta": "About Our Company"
   },
+
   "aboutPage": {
     "label": "About us",
-    "headline": "Elevating global farming standards",
-    "subtext": "Freshfield Group is more than a company — we're a movement toward smarter, more sustainable farming.",
+    "headline": "Built with experience. Trusted by farmers.",
+    "subtext": "Jangid Agro Industries delivers strong and practical agricultural machinery designed for Indian farming conditions and village-level operations.",
     "image": "/about/hero.png",
-    "chipCta": "Let's work together",
-    "chipPills": ["Driven", "Rooted", "Impactful"]
+    "chipCta": "Work With Us",
+    "chipPills": ["Reliable", "Rural", "Powerful"]
   },
+
   "aboutStats": {
     "cards": [
       {
-        "value": "98%",
-        "title": "On-time delivery rate",
-        "description": "Efficient distribution across regions, supporting supply chains with reliability and precision."
+        "value": "10+",
+        "title": "Years of manufacturing experience",
+        "description": "Delivering durable agricultural machinery trusted by farmers and dealers across multiple regions."
       },
       {
-        "value": "15",
-        "title": "Countries reached",
-        "description": "Our agricultural solutions are trusted by partners and farmers in more than 15 countries worldwide."
+        "value": "1000+",
+        "title": "Machines delivered",
+        "description": "Our equipment is actively used in farms, villages, and agricultural operations throughout India."
       },
       {
-        "value": "500k+",
-        "title": "Acres cultivated sustainably",
-        "description": "We promote responsible land use with eco-friendly practices across half a million acres of farmland."
+        "value": "24/7",
+        "title": "Customer support",
+        "description": "We focus on fast service, spare part availability, and dependable customer assistance."
       }
     ]
   },
+
   "aboutWhoWeAre": {
     "label": "Who We Are",
-    "headline": "We are a team of agronomists, technologists, sustainability experts",
-    "description": "We partner with farmers and communities in over 15 countries to enhance productivity, protect the planet, and empower those behind each harvest.",
-    "cta": "Let's work together",
-    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&auto=format&fit=crop&q=80"
+    "headline": "We are manufacturers dedicated to practical and reliable farming solutions.",
+    "description": "From trenching machines to crop processing equipment, we build agricultural machinery that helps farmers work faster, safer, and more efficiently in real farming environments.",
+    "cta": "Work With Us",
+    "image": "/about/team.jpg"
   },
+
   "aboutHistory": {
     "label": "Our history",
-    "headline": "From humble roots to a global vision",
+    "headline": "Growing with Indian agriculture",
     "items": [
       {
-        "year": "2010",
-        "title": "Started as a local farming collective.",
-        "description": "Freshfield began with a small group of growers focused on reliable harvests, responsible land use, and stronger local supply networks.",
-        "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&auto=format&fit=crop&q=80"
+        "year": "2012",
+        "title": "Started as a local machinery workshop.",
+        "description": "We began with a vision to create strong agricultural machines that could handle the real challenges faced by farmers in villages and rural India.",
+        "image": "/history/history1.jpg"
       },
       {
-        "year": "2014",
-        "title": "Built our first regional distribution network.",
-        "description": "We connected farms, transport partners, and buyers through a coordinated system that improved freshness, timing, and post-harvest support.",
-        "image": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1200&auto=format&fit=crop&q=80"
+        "year": "2015",
+        "title": "Expanded into tractor-operated machinery manufacturing.",
+        "description": "Our product line grew with specialized machines designed for farming, digging, processing, and field operations.",
+        "image": "/history/history2.jpg"
       },
       {
-        "year": "2018",
-        "title": "Introduced precision farming programs.",
-        "description": "Data-driven field planning, water monitoring, and crop analytics helped our partners make smarter decisions season after season.",
-        "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&auto=format&fit=crop&q=80"
+        "year": "2020",
+        "title": "Built a trusted network of customers and dealers.",
+        "description": "Farmers across nearby districts and states started relying on our machines for dependable performance and long-term durability.",
+        "image": "/history/history3.jpg"
       },
       {
-        "year": "2023",
-        "title": "Expanded into 15+ countries and launched our global sustainability platform.",
-        "description": "Our commitment to the planet took center stage. We launched carbon-neutral farming initiatives, scaled regenerative agriculture programs, and supported farms in reducing their environmental footprint — one field at a time.",
-        "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&auto=format&fit=crop&q=80"
+        "year": "2025",
+        "title": "Continuing innovation for modern agriculture.",
+        "description": "Today we continue to improve machine quality, efficiency, and design while staying committed to affordable solutions for Indian farmers.",
+        "image": "/history/history4.jpg"
       }
     ]
   },
+
   "solutionsSection": {
-    "label": "Our solutions",
-    "headline": "Innovating the way you grow.",
-    "description": "We deliver end-to-end agricultural solutions that combine traditional farming wisdom with modern innovation.",
-    "cta": "Discover our solutions",
+    "label": "Our machines",
+    "headline": "Engineered for Indian farms.",
+    "description": "We manufacture practical agricultural machinery that improves productivity and supports modern farming operations.",
+    "cta": "View Our Products",
     "cards": [
       {
-        "title": "Precision farming",
-        "description": "We use data-driven insights and smart technology to help farmers monitor soil health.",
-        "image": "solutions/solutions1.jpg"
+        "title": "Trencher machines",
+        "description": "Heavy-duty tractor-operated trenching machines designed for digging strong and accurate trenches in agricultural land.",
+        "image": "solutions/trencher.jpg"
       },
       {
-        "title": "Sustainable irrigation",
-        "description": "Our advanced irrigation systems reduce water waste and support efficient crop hydration.",
-        "image": "/solutions/solutions2.jpg"
+        "title": "Crop processing machines",
+        "description": "Efficient crop and seed processing equipment built for reliable performance and smooth operation.",
+        "image": "/solutions/processing.jpg"
       },
       {
-        "title": "Supply chain support",
-        "description": "We provide tools and expertise to streamline post-harvest logistics, ensuring fresh, high-quality products.",
-        "image": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&auto=format&fit=crop&q=80"
+        "title": "Custom agricultural equipment",
+        "description": "We also manufacture customized farming machinery according to specific agricultural and operational requirements.",
+        "image": "/solutions/custom.jpg"
       }
     ]
   },
+
   "sustainabilitySection": {
-    "headline": "Sustainability at our core.",
-    "description": "We're committed to farming that respects the land, preserves resources, and supports future generations.",
-    "cta": "Let's work together",
-    "image": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=1000&auto=format&fit=crop&q=80",
+    "headline": "Supporting efficient and productive farming.",
+    "description": "Our machines are designed to reduce hard manual labor, improve field efficiency, and help farmers complete work faster with reliable performance.",
+    "cta": "Work With Us",
+    "image": "/sustainability/farm.jpg",
     "initiatives": [
       {
-        "title": "Composting",
-        "description": "Reducing waste and returning nutrients to the soil"
+        "title": "Strong build quality",
+        "description": "Durable machines designed for long-term rural use"
       },
       {
-        "title": "Water-saving systems",
-        "description": "Smart irrigation that conserves every drop"
+        "title": "Efficient field operation",
+        "description": "Machines that save valuable time and labor during farming work"
       }
     ]
   },
+
   "whyChooseUsSection": {
     "label": "Why choose us",
-    "headline": "We're more than just a farm — we're your trusted partner in sustainable agriculture.",
+    "headline": "Trusted agricultural machinery built for real farming conditions.",
     "cards": [
       {
-        "title": "Sustainable Practices",
-        "description": "From pesticide-free farming to smart water use, we're committed to methods that respect the planet and future generations.",
-        "image": "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?w=400&auto=format&fit=crop&q=80"
+        "title": "Strong & Durable Machines",
+        "description": "Our equipment is manufactured using quality materials and strong engineering for long-lasting field performance.",
+        "image": "/why/durable.jpg"
       },
       {
-        "title": "Global Expertise",
-        "description": "Years of international experience delivering scalable agricultural solutions across diverse climates and regions.",
-        "image": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=400&auto=format&fit=crop&q=80"
+        "title": "Farmer-Focused Solutions",
+        "description": "Every machine is designed by understanding the practical needs of Indian farmers and rural agricultural work.",
+        "image": "/why/farmer.jpg"
       },
       {
-        "title": "Trusted by Thousands",
-        "description": "Farmers, distributors, and partners worldwide rely on us for quality, reliability, and long-term success.",
-        "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&auto=format&fit=crop&q=80"
+        "title": "Reliable Service & Support",
+        "description": "We believe in long-term customer relationships through dependable support and trusted service.",
+        "image": "/why/support.jpg"
       }
     ]
   },
+
   "founderSection": {
-    "role": "Founder & CEO",
-    "name": "James\nDer Linden",
-    "quote": "\"We started this journey with a simple belief — that farming can feed the world without harming it. Every seed we plant, every partnership we build, reflects our commitment to sustainability, innovation, and people.\"",
-    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80"
+    "role": "Founder",
+    "name": "Jangid\nAgro Industries",
+    "quote": "\"Our goal has always been simple — build reliable agricultural machinery that genuinely helps farmers work better, faster, and with confidence in every season.\"",
+    "image": "/founder/founder.jpg"
   },
+
   "ctaSection": {
-    "headline": "Grow something\ngreat together.",
-    "description": "Whether you're a farmer, distributor, or partner, we're here to support your goals with sustainable solutions and global expertise.",
-    "cta": "Let's work together",
+    "headline": "Powering modern\nIndian farming.",
+    "description": "Whether you are a farmer, dealer, or business partner, we are committed to delivering strong agricultural machinery with trusted performance.",
+    "cta": "Contact Us",
     "tags": [
-      "Driven",
-      "Rooted",
-      "Impactful"
+      "Reliable",
+      "Rural",
+      "Powerful"
     ]
   },
+
   "footerSection": {
-    "tagline": "Redefining agriculture\nat a global scale.",
+    "tagline": "Trusted agricultural\nmachinery manufacturer.",
     "linksTitle": "Information",
     "links": [
       {
@@ -201,42 +214,47 @@
       "YouTube",
       "Facebook"
     ],
-    "copyright": "© 2026 Freshfield Group. All Rights Reserved."
+    "copyright": "© 2026 Jangid Agro Industries. All Rights Reserved."
   },
+
   "galleryHero": {
     "tag": "Gallery",
-    "headline": "Moments that tell our story.",
-    "description": "Welcome to our gallery — a visual journey through the fields, people, and innovations that define our work.",
-    "image": "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "headline": "Machines built for real farming work.",
+    "description": "Explore our gallery showcasing agricultural machinery, manufacturing quality, field operations, and trusted farming equipment.",
+    "image": "/gallery/hero.jpg"
   },
+
   "galleryNav": {
     "images": "Images",
     "video": "Video"
   },
+
   "galleryVideo": {
     "playVideo": "Play video",
     "closeVideo": "Close video",
-    "noVideos": "No videos to show yet."
+    "noVideos": "No videos available yet."
   },
+
   "contactHero": {
     "tag": "Contact us",
-    "headline": "Let's grow something\ngreat together",
-    "description": "Our team is here to help — whether you're a grower, partner, or simply curious about what we do.",
-    "image": "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "headline": "Let's build better\nfarming together",
+    "description": "Get in touch with us for agricultural machinery inquiries, dealership opportunities, pricing, and support.",
+    "image": "/contact/hero.jpg"
   },
+
   "contactForm": {
     "tag": "Get in touch",
-    "headline": "We look forward to\nhearing from you.",
-    "description": "We're committed to clear communication, fast responses, and personalized support every step of the way.",
-    "address": "14 Tottenham Road, London, England",
-    "phone": "+1 212 425 8617",
-    "email": "information@office.com",
+    "headline": "We are ready to\nhelp you.",
+    "description": "Our team is available to answer your questions about machines, pricing, delivery, and service support.",
+    "address": "Rajasthan, India",
+    "phone": "+91 00000 00000",
+    "email": "info@jangidagroindustries.com",
     "form": {
       "firstName": "First name",
       "lastName": "Last name",
       "phone": "Your phone",
       "email": "Your email",
-      "message": "Your text",
+      "message": "Your message",
       "submit": "Submit"
     }
   }

@@ -15,12 +15,14 @@ import DesktopNav from '../components/DesktopNav';
 import MobileDrawer from '../components/MobileDrawer';
 import { LeafGlyph, MenuIcon } from '../components/NavIcons';
 import type { NavbarProps } from '../types';
+import { useRouter } from 'next/navigation';
 
 export default function Navbar({ dict, locale, navbarTone = 'onDark' }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const navItems = getNavItems(dict, locale);
   const theme = useTheme();
   const isLightBar = navbarTone === 'onLight';
+  const router = useRouter();
 
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -54,6 +56,7 @@ export default function Navbar({ dict, locale, navbarTone = 'onDark' }: NavbarPr
             minWidth: 0,
             ...(isLightBar ? { color: 'text.primary' } : {}),
           }}
+          onClick={() => router.push('/')}
         >
           <LeafGlyph />
           <Typography variant="subtitle1" noWrap sx={{ fontWeight: 700, letterSpacing: '-0.02em' }}>
