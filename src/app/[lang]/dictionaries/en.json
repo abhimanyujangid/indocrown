@@ -73,7 +73,7 @@
     "headline": "We are manufacturers dedicated to practical and reliable farming solutions.",
     "description": "From trenching machines to crop processing equipment, we build agricultural machinery that helps farmers work faster, safer, and more efficiently in real farming environments.",
     "cta": "Work With Us",
-    "image": "/about/team.jpg"
+    "image": "/about/team.png"
   },
 
   "aboutHistory": {
@@ -126,7 +126,7 @@
       {
         "title": "Custom agricultural equipment",
         "description": "We also manufacture customized farming machinery according to specific agricultural and operational requirements.",
-        "image": "/solutions/custom.jpg"
+        "image": "/solutions/custom.png"
       }
     ]
   },
@@ -135,7 +135,7 @@
     "headline": "Supporting efficient and productive farming.",
     "description": "Our machines are designed to reduce hard manual labor, improve field efficiency, and help farmers complete work faster with reliable performance.",
     "cta": "Work With Us",
-    "image": "/sustainability/farm.jpg",
+    "image": "/sustainability/farm.png",
     "initiatives": [
       {
         "title": "Strong build quality",
@@ -155,17 +155,17 @@
       {
         "title": "Strong & Durable Machines",
         "description": "Our equipment is manufactured using quality materials and strong engineering for long-lasting field performance.",
-        "image": "/why/durable.jpg"
+        "image": "/why/durable.png"
       },
       {
         "title": "Farmer-Focused Solutions",
         "description": "Every machine is designed by understanding the practical needs of Indian farmers and rural agricultural work.",
-        "image": "/why/farmer.jpg"
+        "image": "/why/farmer.png"
       },
       {
         "title": "Reliable Service & Support",
         "description": "We believe in long-term customer relationships through dependable support and trusted service.",
-        "image": "/why/support.jpg"
+        "image": "/why/support.png"
       }
     ]
   },
@@ -221,7 +221,7 @@
     "tag": "Gallery",
     "headline": "Machines built for real farming work.",
     "description": "Explore our gallery showcasing agricultural machinery, manufacturing quality, field operations, and trusted farming equipment.",
-    "image": "/gallery/hero.jpg"
+    "image": "/gallery/hero.png"
   },
 
   "galleryNav": {
@@ -239,7 +239,7 @@
     "tag": "Contact us",
     "headline": "Let's build better\nfarming together",
     "description": "Get in touch with us for agricultural machinery inquiries, dealership opportunities, pricing, and support.",
-    "image": "/contact/hero.jpg"
+    "image": "/contact/hero.png"
   },
 
   "contactForm": {

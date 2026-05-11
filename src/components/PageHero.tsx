@@ -27,11 +27,11 @@ export default function PageHero({ section }: PageHeroProps) {
       sx={{ 
         position: 'relative',
         width: '100%', 
-        minHeight: { xs: '60vh', md: '75vh', lg: '85vh' },
+        minHeight: { xs: '55vh', md: '65vh', lg: '65vh' },
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        pt: { xs: 12, md: 16 }, // Padding to account for the fixed Navbar
+        pt: { xs: 12, md: 12 }, // Padding to account for the fixed Navbar
         pb: { xs: 8, md: 12 },
         color: 'common.white'
       }}
@@ -93,13 +93,12 @@ export default function PageHero({ section }: PageHeroProps) {
           <Typography 
             variant="h1" 
             sx={{ 
-              fontWeight: 700, 
+              fontWeight: 600, 
               mb: 4, 
               whiteSpace: 'pre-line',
-              fontSize: { xs: '2.5rem', sm: '3.5rem', md: '4.5rem', lg: '5rem' },
+              fontSize: { xs: '2.5rem', sm: '3.5rem', md: '3rem', lg: '3rem' },
               lineHeight: 1.1,
               letterSpacing: '-0.02em',
-              textShadow: '0 2px 10px #3b8712e6',
               color: 'common.white'
             }}
           >
@@ -113,7 +112,7 @@ export default function PageHero({ section }: PageHeroProps) {
               color: 'rgba(255,255,255,0.9)',
               fontSize: { xs: '1.125rem', md: '1.25rem', lg: '1.5rem' },
               lineHeight: 1.5,
-              maxWidth: 700,
+              maxWidth: 800,
               mx: 'auto'
             }}
           >

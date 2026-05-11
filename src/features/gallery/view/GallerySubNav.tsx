@@ -36,7 +36,7 @@ export default function GallerySubNav({ locale, labels }: GallerySubNavProps) {
   }, [locale, pathname]);
 
   return (
-    <Box sx={{ mb: { xs: 3, md: 4 } }}>
+    <Box sx={{ my: { xs: 3, md: 4 },display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <Stack direction="row" spacing={1.5}>
         <Button
           component={NextLink}
