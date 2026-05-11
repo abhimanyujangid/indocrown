@@ -175,7 +175,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
               flex: 1,
               width: '100%',
               bgcolor: '#FAFAFA',
-              borderRadius: 3,
+              borderRadius: { xs: 1, md: 2 },
               p: { xs: 4, sm: 6, md: 8 }
             }}
           >

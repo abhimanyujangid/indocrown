@@ -19,7 +19,7 @@ export default function Cta({ dict }: CtaProps) {
 
   return (
     <Box component="section" id="cta" sx={{ width: '100%', py: { xs: 8, md: 12 }, bgcolor: 'common.white' }}>
-      <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+      <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
         <Box 
           component={motion.div}
           initial={{ opacity: 0, y: 50 }}
@@ -29,7 +29,7 @@ export default function Cta({ dict }: CtaProps) {
           sx={{
             width: '100%',
             minHeight: { xs: 450, md: 500 },
-            borderRadius: { xs: 4, md: 6 },
+            borderRadius: { xs: 1, md: 2 },
             // Beautiful smooth gradient matching the design
             background: 'linear-gradient(110deg, #FCEE82 0%, #FFF387 40%, #F1D2B3 100%)',
             display: 'flex',

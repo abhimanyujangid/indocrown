@@ -81,9 +81,9 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
             whileInView={isMobile ? { opacity: 1, y: 0 } : undefined}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.6 }}
-            sx={{ position: { xs: 'relative', md: 'absolute' }, width: { xs: '100%', sm: 320, md: 360 }, maxWidth: 360, height: 390, bgcolor: '#0C1009', color: 'common.white', borderRadius: 4, p: 4, boxShadow: '0 20px 40px rgba(0,0,0,0.1)', zIndex: 1, transformOrigin: 'bottom right' }}
+            sx={{ position: { xs: 'relative', md: 'absolute' }, width: { xs: '100%', sm: 320, md: 360 }, maxWidth: 360, height: 390, bgcolor: '#0C1009', color: 'common.white', borderRadius: { xs: 1, md: 2 }, p: 4, boxShadow: '0 20px 40px rgba(0,0,0,0.1)', zIndex: 1, transformOrigin: 'bottom right' }}
           >
-            <Box sx={{ width: 'full', height: 180, borderRadius: 2, overflow: 'hidden', mb: 2}}>
+            <Box sx={{ width: 'full', height: 180, borderRadius: { xs: 1, md: 2 }, overflow: 'hidden', mb: 2}}>
               <img src={section.cards[0].image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Box>
             <Typography variant="h5" sx={{ mb: 1, fontWeight: 600 }}>{section.cards[0].title}</Typography>
@@ -97,9 +97,9 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
             whileInView={isMobile ? { opacity: 1, y: 0 } : undefined}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.6, delay: isMobile ? 0.15 : 0 }}
-            sx={{ position: { xs: 'relative', md: 'absolute' }, width: { xs: '100%', sm: 320, md: 360 }, maxWidth: 360, height: 390, bgcolor: '#F8F9FA', color: 'text.primary', borderRadius: 4, p: 4, boxShadow: '0 20px 60px rgba(0,0,0,0.15)', zIndex: 2 }}
+            sx={{ position: { xs: 'relative', md: 'absolute' }, width: { xs: '100%', sm: 320, md: 360 }, maxWidth: 360, height: 390, bgcolor: '#F8F9FA', color: 'text.primary', borderRadius: { xs: 1, md: 2 }, p: 4, boxShadow: '0 20px 60px rgba(0,0,0,0.15)', zIndex: 2 }}
           >
-            <Box sx={{ width: 'full', height: 180, borderRadius: 2, overflow: 'hidden', mb: 2 }}>
+            <Box sx={{ width: 'full', height: 180, borderRadius: { xs: 1, md: 2 }, overflow: 'hidden', mb: 2 }}>
               <img src={section.cards[1].image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </Box>
             <Typography variant="h5" sx={{ mb: 1, fontWeight: 600 }}>{section.cards[1].title}</Typography>
@@ -114,7 +114,7 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
             whileInView={isMobile ? { opacity: 1, y: 0 } : undefined}
             viewport={{ once: true, margin: "0px 0px -50px 0px" }}
             transition={{ duration: 0.6, delay: isMobile ? 0.3 : 0 }}
-            sx={{ position: { xs: 'relative', md: 'absolute' }, width: { xs: '100%', sm: 320, md: 360 }, maxWidth: 360, height: 390, bgcolor: 'primary.main', color: 'common.white', borderRadius: 4, p: 4, boxShadow: '0 20px 40px rgba(0,0,0,0.1)', zIndex: 1, transformOrigin: 'bottom left' }}
+            sx={{ position: { xs: 'relative', md: 'absolute' }, width: { xs: '100%', sm: 320, md: 360 }, maxWidth: 360, height: 390, bgcolor: 'primary.main', color: 'common.white', borderRadius: { xs: 1, md: 2 }, p: 4, boxShadow: '0 20px 40px rgba(0,0,0,0.1)', zIndex: 1, transformOrigin: 'bottom left' }}
           >
           <Box sx={{ width: 'full', height: 180, borderRadius: 2, overflow: 'hidden', mb: 2 }}>
               <img src={section.cards[2].image} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />

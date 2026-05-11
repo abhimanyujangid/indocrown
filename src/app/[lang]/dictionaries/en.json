@@ -43,6 +43,62 @@
     "chipCta": "Let's work together",
     "chipPills": ["Driven", "Rooted", "Impactful"]
   },
+  "aboutStats": {
+    "cards": [
+      {
+        "value": "98%",
+        "title": "On-time delivery rate",
+        "description": "Efficient distribution across regions, supporting supply chains with reliability and precision."
+      },
+      {
+        "value": "15",
+        "title": "Countries reached",
+        "description": "Our agricultural solutions are trusted by partners and farmers in more than 15 countries worldwide."
+      },
+      {
+        "value": "500k+",
+        "title": "Acres cultivated sustainably",
+        "description": "We promote responsible land use with eco-friendly practices across half a million acres of farmland."
+      }
+    ]
+  },
+  "aboutWhoWeAre": {
+    "label": "Who We Are",
+    "headline": "We are a team of agronomists, technologists, sustainability experts",
+    "description": "We partner with farmers and communities in over 15 countries to enhance productivity, protect the planet, and empower those behind each harvest.",
+    "cta": "Let's work together",
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&auto=format&fit=crop&q=80"
+  },
+  "aboutHistory": {
+    "label": "Our history",
+    "headline": "From humble roots to a global vision",
+    "items": [
+      {
+        "year": "2010",
+        "title": "Started as a local farming collective.",
+        "description": "Freshfield began with a small group of growers focused on reliable harvests, responsible land use, and stronger local supply networks.",
+        "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&auto=format&fit=crop&q=80"
+      },
+      {
+        "year": "2014",
+        "title": "Built our first regional distribution network.",
+        "description": "We connected farms, transport partners, and buyers through a coordinated system that improved freshness, timing, and post-harvest support.",
+        "image": "https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=1200&auto=format&fit=crop&q=80"
+      },
+      {
+        "year": "2018",
+        "title": "Introduced precision farming programs.",
+        "description": "Data-driven field planning, water monitoring, and crop analytics helped our partners make smarter decisions season after season.",
+        "image": "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&auto=format&fit=crop&q=80"
+      },
+      {
+        "year": "2023",
+        "title": "Expanded into 15+ countries and launched our global sustainability platform.",
+        "description": "Our commitment to the planet took center stage. We launched carbon-neutral farming initiatives, scaled regenerative agriculture programs, and supported farms in reducing their environmental footprint — one field at a time.",
+        "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&auto=format&fit=crop&q=80"
+      }
+    ]
+  },
   "solutionsSection": {
     "label": "Our solutions",
     "headline": "Innovating the way you grow.",

@@ -5,24 +5,15 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
-import { motion, type Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import AnimatedButton from '../../../components/AnimatedButton';
+import TextReveal from '../../../components/TextReveal';
 import { LeafGlyph } from '../../navigation/components/NavIcons';
 import type { Dictionary } from '../../../app/[lang]/dictionaries';
 
 type SustainabilityProps = {
   dict: Dictionary;
-};
-
-// Bottom-to-top scroll reveal animation
-const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 50 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }
-  },
 };
 
 export default function Sustainability({ dict }: SustainabilityProps) {
@@ -36,7 +27,7 @@ export default function Sustainability({ dict }: SustainabilityProps) {
         <Box
           sx={{
             bgcolor: '#FAFAFA',
-            borderRadius: { xs: 4, md: 6 },
+            borderRadius: { xs: 1, md: 2, lg: 2 },
             overflow: 'hidden',
             display: 'flex',
             flexDirection: { xs: 'column', lg: 'row' },
@@ -46,27 +37,24 @@ export default function Sustainability({ dict }: SustainabilityProps) {
 
           {/* Left Column (Content) */}
           <Box sx={{ flex: 1, p: { xs: 4, sm: 5, md: 6, lg: 8 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+            <TextReveal y={50}>
               <Typography variant="h2" sx={{ mb: 3, maxWidth: 400 }}>
                 {section.headline}
               </Typography>
-            </motion.div>
+            </TextReveal>
 
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+            <TextReveal y={50} delay={0.08}>
               <Typography variant="body1" sx={{ color: 'text.secondary', mb: 4, maxWidth: 450 }}>
                 {section.description}
               </Typography>
-            </motion.div>
+            </TextReveal>
 
             <Stack spacing={0} sx={{ mb: 6, maxWidth: 450 }}>
               {section.initiatives.map((item: any, index: number) => (
-                <motion.div
+                <TextReveal
                   key={item.title}
-                  variants={itemVariants}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, margin: "0px 0px -50px 0px" }}
-                  transition={{ delay: index * 0.15 }}
+                  y={50}
+                  delay={0.14 + index * 0.12}
                 >
                   <Box sx={{ py: 2 }}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 700, mb: 0.5, color: 'text.primary' }}>
@@ -77,15 +65,15 @@ export default function Sustainability({ dict }: SustainabilityProps) {
                     </Typography>
                   </Box>
                   <Divider />
-                </motion.div>
+                </TextReveal>
               ))}
             </Stack>
 
-            <motion.div variants={itemVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
+            <TextReveal y={50} delay={0.34}>
               <AnimatedButton btnVariant={2} startIcon={<LeafGlyph size={18} />}>
                 {section.cta}
               </AnimatedButton>
-            </motion.div>
+            </TextReveal>
           </Box>
 
           {/* Right Column (Image) */}
@@ -107,7 +95,7 @@ export default function Sustainability({ dict }: SustainabilityProps) {
                   bottom: { xs: 0, lg: 32 },
                   left: { xs: 0, lg: 0 },
                   right: { xs: 0, lg: 32 },
-                  borderRadius: { xs: 0, lg: 4 },
+                  borderRadius: { xs: 1, lg: 2 },
                   overflow: 'hidden',
                   backgroundImage: `url(${section.image})`,
                   backgroundSize: 'cover',
