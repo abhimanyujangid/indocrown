@@ -34,7 +34,7 @@ export default function About({ dict }: AboutProps) {
 
   return (
     <Box component="section" id="about" sx={{ bgcolor: 'secondary.main', py: { xs: 8, md: 14 } }}>
-      <Container maxWidth="xl" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+      <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
         <Stack 
           direction={{ xs: 'column', md: 'row' }} 
           spacing={{ xs: 6, md: 12 }} 

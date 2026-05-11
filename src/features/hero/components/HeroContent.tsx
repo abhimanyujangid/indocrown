@@ -47,7 +47,7 @@ export default function HeroContent({ dict }: HeroContentProps) {
             </Stack>
           </Box>
           <Box sx={{ flex: 1, minWidth: 0 }}>
-            <Typography variant="h1" sx={{ textAlign: { xs: 'left', md: 'right' }, ml: { md: 'auto' }, maxWidth: { md: 490 }, color: 'common.white', textShadow: '0 12px 48px rgba(0,0,0,0.35)', fontWeight: 'semibold', fontSize: { xs: '3rem', md: '5rem' } }}>
+            <Typography variant="h1" sx={{ textAlign: { xs: 'left', md: 'right' }, ml: { md: 'auto' }, maxWidth: { md: 790 }, color: 'common.white', textShadow: '0 12px 48px rgba(0,0,0,0.35)', fontWeight: 'semibold', fontSize: { xs: '3rem', md: '4rem' } }}>
               {dict.hero.headline}
             </Typography>
           </Box>
