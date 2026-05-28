@@ -36,7 +36,7 @@ export default async function HomePage({ params }: PageProps) {
       <WhyChooseUs dict={dict} />
       <Founder dict={dict} />
       <Cta dict={dict} />
-      <Footer dict={dict} />
+      <Footer dict={dict} locale={locale} />
     </>
   );
 }

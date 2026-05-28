@@ -8,6 +8,8 @@ import Link from 'next/link';
 
 import { LeafGlyph } from '../../navigation/components/NavIcons';
 import type { Dictionary } from '../../../app/[lang]/dictionaries';
+import type { Locale } from '../../../i18n/config';
+import { localizedPath } from '../../../i18n/paths';
 
 // Simple Social Icons (Instagram, YouTube, Facebook)
 function InstagramIcon() {
@@ -45,9 +47,10 @@ const SocialIcons: Record<string, React.FC> = {
 
 type FooterProps = {
   dict: Dictionary;
+  locale: Locale;
 };
 
-export default function Footer({ dict }: FooterProps) {
+export default function Footer({ dict, locale }: FooterProps) {
   const section = (dict as any).footerSection;
   if (!section) return null;
 
@@ -115,11 +118,11 @@ export default function Footer({ dict }: FooterProps) {
               {section.linksTitle}
             </Typography>
             <Stack spacing={2.5}>
-              {section.links.map((link: any) => (
+              {section.links.map((link: { label: string; href: string }) => (
                 <Typography 
                   key={link.label}
                   component={Link}
-                  href={link.href}
+                  href={localizedPath(locale, link.href)}
                   variant="body2" 
                   sx={{ 
                     color: 'text.secondary', 

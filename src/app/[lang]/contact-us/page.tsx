@@ -30,7 +30,7 @@ export default async function ContactPage({ params }: PageProps) {
       <ContactForm dict={dict} />
       <WhyChooseUs dict={dict} />
       <Sustainability dict={dict} />
-      <Footer dict={dict} />
+      <Footer dict={dict} locale={locale} />
     </>
   );
 }

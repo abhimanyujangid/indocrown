@@ -56,7 +56,7 @@ export default function Navbar({ dict, locale, navbarTone = 'onDark' }: NavbarPr
             minWidth: 0,
             ...(isLightBar ? { color: 'text.primary' } : {}),
           }}
-          onClick={() => router.push('/')}
+          onClick={() => router.push(`/${locale}`)}
         >
           <LeafGlyph />
           <Typography variant="subtitle1" noWrap sx={{ fontWeight: 700, letterSpacing: '-0.02em' }}>

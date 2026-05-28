@@ -36,7 +36,7 @@ export default async function GalleryLayout({ children, params }: GalleryLayoutP
           {children}
         </Container>
       </Box>
-      <Footer dict={dict} />
+      <Footer dict={dict} locale={locale} />
     </>
   );
 }

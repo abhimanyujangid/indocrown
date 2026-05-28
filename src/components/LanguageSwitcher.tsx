@@ -6,8 +6,12 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import { usePathname, useRouter } from 'next/navigation';
 
-import type { Locale } from '../i18n/config';
+import { LOCALE_COOKIE, type Locale } from '../i18n/config';
 import type { NavbarTone } from '@/src/features/navigation/types';
+
+function setLocaleCookie(locale: Locale) {
+  document.cookie = `${LOCALE_COOKIE}=${locale};path=/;max-age=31536000;SameSite=Lax`;
+}
 
 type LanguageSwitcherProps = {
   locale: Locale;
@@ -23,6 +27,8 @@ export default function LanguageSwitcher({ locale, tone = 'onDark' }: LanguageSw
 
   const handleLocale = (_event: MouseEvent<HTMLElement>, next: Locale | null) => {
     if (!next || next === locale) return;
+
+    setLocaleCookie(next);
 
     const segments = pathname.split('/').filter(Boolean);
     if (segments.length === 0) {
