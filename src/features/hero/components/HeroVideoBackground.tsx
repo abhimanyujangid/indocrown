@@ -10,6 +10,7 @@ export default function HeroVideoBackground() {
         loop
         muted
         playsInline
+        preload="auto"
         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       >
         <source src={HERO_VIDEO} type="video/mp4" />

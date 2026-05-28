@@ -14,7 +14,7 @@
       "rooted": "Rural",
       "impactful": "Powerful"
     },
-    "tagline": "Built for Indian farmers with strong engineering, trusted performance, and machines designed for real field conditions.",
+    "tagline": "Built for farmers with strong engineering, trusted performance, and machines designed for real field conditions.",
     "headline": "Manufacturing powerful agricultural machinery for modern farming.",
     "cta": "Explore Our Machines",
     "coords": "Rajasthan, India",
@@ -23,7 +23,7 @@
 
   "aboutSection": {
     "label": "About us",
-    "headline": "We manufacture durable agricultural machinery for Indian farmers.",
+    "headline": "We manufacture durable agricultural machinery for farmers.",
     "chips": [
       "Reliable",
       "Strong",
@@ -33,7 +33,7 @@
       "Affordable",
       "Durable",
       "Trusted",
-      "Indian Made"
+      "Made in India"
     ],
     "description": "Jangid Agro Industries is a trusted agricultural machinery manufacturer based in India. We specialize in tractor-operated farming machines designed to improve productivity, reduce manual labor, and support farmers in villages and rural areas with reliable and long-lasting equipment.",
     "cta": "About Our Company"
@@ -42,7 +42,7 @@
   "aboutPage": {
     "label": "About us",
     "headline": "Built with experience. Trusted by farmers.",
-    "subtext": "Jangid Agro Industries delivers strong and practical agricultural machinery designed for Indian farming conditions and village-level operations.",
+    "subtext": "Jangid Agro Industries delivers strong and practical agricultural machinery designed for farming conditions and village-level operations.",
     "image": "/about/hero.png",
     "chipCta": "Work With Us",
     "chipPills": ["Reliable", "Rural", "Powerful"]
@@ -78,7 +78,7 @@
 
   "aboutHistory": {
     "label": "Our history",
-    "headline": "Growing with Indian agriculture",
+    "headline": "Growing with agriculture",
     "items": [
       {
         "year": "2012",
@@ -101,7 +101,7 @@
       {
         "year": "2025",
         "title": "Continuing innovation for modern agriculture.",
-        "description": "Today we continue to improve machine quality, efficiency, and design while staying committed to affordable solutions for Indian farmers.",
+        "description": "Today we continue to improve machine quality, efficiency, and design while staying committed to affordable solutions for farmers.",
         "image": "/history/history4.jpg"
       }
     ]
@@ -109,7 +109,7 @@
 
   "solutionsSection": {
     "label": "Our machines",
-    "headline": "Engineered for Indian farms.",
+    "headline": "Engineered for farms.",
     "description": "We manufacture practical agricultural machinery that improves productivity and supports modern farming operations.",
     "cta": "View Our Products",
     "cards": [
@@ -159,7 +159,7 @@
       },
       {
         "title": "Farmer-Focused Solutions",
-        "description": "Every machine is designed by understanding the practical needs of Indian farmers and rural agricultural work.",
+        "description": "Every machine is designed by understanding the practical needs of farmers and rural agricultural work.",
         "image": "/why/farmer.png"
       },
       {
@@ -178,9 +178,9 @@
   },
 
   "ctaSection": {
-    "headline": "Powering modern\nIndian farming.",
+    "headline": "Powering modern\nfarming.",
     "description": "Whether you are a farmer, dealer, or business partner, we are committed to delivering strong agricultural machinery with trusted performance.",
-    "cta": "Contact Us",
+    "cta": "Contact Us",  
     "tags": [
       "Reliable",
       "Rural",
