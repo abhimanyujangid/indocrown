@@ -210,9 +210,9 @@
       }
     ],
     "socials": [
-      "Instagram",
-      "YouTube",
-      "Facebook"
+      { "label": "Instagram", "href": "#" },
+      { "label": "YouTube", "href": "https://www.youtube.com/@INDOCROWN" },
+      { "label": "Facebook", "href": "https://www.facebook.com/avinashrajotiya" }
     ],
     "copyright": "© 2026 Jangid Agro Industries. All Rights Reserved."
   },

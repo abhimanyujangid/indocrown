@@ -78,13 +78,15 @@ export default function Footer({ dict }: FooterProps) {
 
             {/* Social Pills */}
             <Stack direction="row" spacing={2} useFlexGap sx={{ flexWrap: 'wrap' }}>
-              {section.socials.map((platform: string) => {
-                const Icon = SocialIcons[platform];
+              {section.socials.map((social: { label: string; href: string }) => {
+                const Icon = SocialIcons[social.label];
+                const isExternal = social.href.startsWith('http');
                 return (
                   <Box 
-                    key={platform}
+                    key={social.label}
                     component="a"
-                    href="#"
+                    href={social.href}
+                    {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     sx={{ 
                       display: 'inline-flex', 
                       alignItems: 'center', 
@@ -100,7 +102,7 @@ export default function Footer({ dict }: FooterProps) {
                     }}
                   >
                     {Icon && <Box sx={{ color: 'primary.main', display: 'flex' }}><Icon /></Box>}
-                    <Typography variant="body2" sx={{ fontWeight: 500 }}>{platform}</Typography>
+                    <Typography variant="body2" sx={{ fontWeight: 500 }}>{social.label}</Typography>
                   </Box>
                 );
               })}

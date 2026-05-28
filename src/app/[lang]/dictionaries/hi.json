@@ -197,9 +197,9 @@
       }
     ],
     "socials": [
-      "Instagram",
-      "YouTube",
-      "Facebook"
+      { "label": "Instagram", "href": "#" },
+      { "label": "YouTube", "href": "https://www.youtube.com/@INDOCROWN" },
+      { "label": "Facebook", "href": "https://www.facebook.com/avinashrajotiya" }
     ],
     "copyright": "© 2026 जांगिड़ एग्रो इंडस्ट्रीज। सर्वाधिकार सुरक्षित।"
   },
