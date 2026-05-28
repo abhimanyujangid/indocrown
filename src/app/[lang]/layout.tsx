@@ -26,9 +26,9 @@ const notoDevanagari = Noto_Sans_Devanagari({
 });
 
 export const metadata: Metadata = {
-  title: 'Freshfield Group',
+  title: 'Dhannalal Surendra Kumar Krishi Yantra Udyog',
   description:
-    'Through sustainable farming and smart collaboration, we grow more than crops — we grow impact.',
+    'Trusted agricultural machinery manufacturer — durable tractor-operated farming machines for Indian farmers.',
 };
 
 export async function generateStaticParams() {

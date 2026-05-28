@@ -68,8 +68,8 @@ export default function Footer({ dict, locale }: FooterProps) {
               <Box sx={{ width: 40, height: 40, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <LeafGlyph size={40} />
               </Box>
-              <Typography variant="h5" sx={{ fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1 }}>
-                Freshfield<br />Group
+              <Typography variant="h5" sx={{ fontWeight: 700, letterSpacing: '-0.02em', lineHeight: 1.2, whiteSpace: 'pre-line' }}>
+                {dict.brand}
               </Typography>
               <Typography variant="caption" sx={{ alignSelf: 'flex-start', mt: 0.5 }}>®</Typography>
             </Box>

@@ -1,5 +1,5 @@
 {
-  "brand": "Jangid Agro Industries",
+  "brand": "Dhannalal Surendra Kumar\nKrishi Yantra Udyog",
 
   "nav": {
     "about": "About Us",
@@ -35,14 +35,14 @@
       "Trusted",
       "Made in India"
     ],
-    "description": "Jangid Agro Industries is a trusted agricultural machinery manufacturer based in India. We specialize in tractor-operated farming machines designed to improve productivity, reduce manual labor, and support farmers in villages and rural areas with reliable and long-lasting equipment.",
+    "description": "Dhannalal Surendra Kumar Krishi Yantra Udyog is a trusted agricultural machinery manufacturer based in India. We specialize in tractor-operated farming machines designed to improve productivity, reduce manual labor, and support farmers in villages and rural areas with reliable and long-lasting equipment.",
     "cta": "About Our Company"
   },
 
   "aboutPage": {
     "label": "About us",
     "headline": "Built with experience. Trusted by farmers.",
-    "subtext": "Jangid Agro Industries delivers strong and practical agricultural machinery designed for farming conditions and village-level operations.",
+    "subtext": "Dhannalal Surendra Kumar Krishi Yantra Udyog delivers strong and practical agricultural machinery designed for farming conditions and village-level operations.",
     "image": "/about/hero.png",
     "chipCta": "Work With Us",
     "chipPills": ["Reliable", "Rural", "Powerful"]
@@ -172,7 +172,7 @@
 
   "founderSection": {
     "role": "Founder",
-    "name": "Jangid\nAgro Industries",
+    "name": "Dhannalal Surendra Kumar\nKrishi Yantra Udyog",
     "quote": "\"Our goal has always been simple — build reliable agricultural machinery that genuinely helps farmers work better, faster, and with confidence in every season.\"",
     "image": "/founder/founder.jpg"
   },
@@ -214,7 +214,7 @@
       { "label": "YouTube", "href": "https://www.youtube.com/@INDOCROWN" },
       { "label": "Facebook", "href": "https://www.facebook.com/avinashrajotiya" }
     ],
-    "copyright": "© 2026 Jangid Agro Industries. All Rights Reserved."
+    "copyright": "© 2026 Dhannalal Surendra Kumar Krishi Yantra Udyog. All Rights Reserved."
   },
 
   "galleryHero": {
