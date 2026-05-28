@@ -1,7 +1,9 @@
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
+import NextLink from 'next/link';
 
 import AnimatedButton from '@/src/components/AnimatedButton';
+import { localizedPath } from '@/src/i18n/paths';
 import LanguageSwitcher from '@/src/components/LanguageSwitcher';
 import { ChevronDownIcon, LeafGlyph } from './NavIcons';
 import NavItemLink from './NavItemLink';
@@ -15,6 +17,7 @@ type DesktopNavProps = NavbarProps & {
 
 export default function DesktopNav({ dict, locale, navItems, navTone = 'onDark' }: DesktopNavProps) {
   const isLightNav = navTone === 'onLight';
+  const contactHref = localizedPath(locale, '/contact-us');
 
   return (
     <>
@@ -27,6 +30,8 @@ export default function DesktopNav({ dict, locale, navItems, navTone = 'onDark' 
       <Stack direction="row" spacing={2} sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', justifyContent: 'flex-end' }}>
         <LanguageSwitcher locale={locale} tone={navTone} />
         <AnimatedButton
+          component={NextLink}
+          href={contactHref}
           btnVariant={isLightNav ? 2 : 1}
           startIcon={<LeafGlyph size={18} />}
         >

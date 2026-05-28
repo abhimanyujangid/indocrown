@@ -5,8 +5,11 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import { motion, type Variants } from 'framer-motion';
+import NextLink from 'next/link';
 
 import AnimatedButton from '../../../components/AnimatedButton';
+import type { Locale } from '../../../i18n/config';
+import { localizedPath } from '../../../i18n/paths';
 // Re-using LeafGlyph from navigation icons, ideally should be in a shared icons folder
 import { LeafGlyph } from '../../navigation/components/NavIcons';
 
@@ -14,6 +17,7 @@ import type { Dictionary } from '../../../app/[lang]/dictionaries';
 
 type AboutProps = {
   dict: Dictionary;
+  locale: Locale;
 };
 
 // Individual scroll reveal animation config
@@ -27,7 +31,8 @@ const itemVariants: Variants = {
   },
 };
 
-export default function About({ dict }: AboutProps) {
+export default function About({ dict, locale }: AboutProps) {
+  const aboutHref = localizedPath(locale, '/about');
   // We use `any` casting temporarily to avoid TS errors until we regenerate dictionary types
   const aboutSection = (dict as any).aboutSection;
   if (!aboutSection) return null;
@@ -109,6 +114,8 @@ export default function About({ dict }: AboutProps) {
               <Box>
                 {/* For the solid green button styling */}
                 <AnimatedButton
+                  component={NextLink}
+                  href={aboutHref}
                   startIcon={<LeafGlyph size={18} />}
                   btnVariant={2}
                 >

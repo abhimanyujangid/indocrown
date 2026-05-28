@@ -30,12 +30,12 @@ export default async function HomePage({ params }: PageProps) {
     <>
       <Navbar dict={dict} locale={locale} />
       <Hero dict={dict} />
-      <About dict={dict} />
+      <About dict={dict} locale={locale} />
       <Solutions dict={dict} />
       <Sustainability dict={dict} />
       <WhyChooseUs dict={dict} />
       <Founder dict={dict} />
-      <Cta dict={dict} />
+      <Cta dict={dict} locale={locale} />
       <Footer dict={dict} locale={locale} />
     </>
   );

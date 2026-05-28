@@ -4,18 +4,24 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { motion } from 'framer-motion';
+import NextLink from 'next/link';
 
 import AnimatedButton from '../../../components/AnimatedButton';
 import { LeafGlyph } from '../../navigation/components/NavIcons';
 import type { Dictionary } from '../../../app/[lang]/dictionaries';
+import type { Locale } from '../../../i18n/config';
+import { localizedPath } from '../../../i18n/paths';
 
 type CtaProps = {
   dict: Dictionary;
+  locale: Locale;
 };
 
-export default function Cta({ dict }: CtaProps) {
+export default function Cta({ dict, locale }: CtaProps) {
   const section = (dict as any).ctaSection;
   if (!section) return null;
+
+  const contactHref = localizedPath(locale, '/contact-us');
 
   return (
     <Box component="section" id="cta" sx={{ width: '100%', py: { xs: 8, md: 12 }, bgcolor: 'common.white' }}>
@@ -77,7 +83,12 @@ export default function Cta({ dict }: CtaProps) {
               mt: 6
             }}
           >
-            <AnimatedButton btnVariant={2} startIcon={<LeafGlyph size={18} />}>
+            <AnimatedButton
+              component={NextLink}
+              href={contactHref}
+              btnVariant={2}
+              startIcon={<LeafGlyph size={18} />}
+            >
               {section.cta}
             </AnimatedButton>
 

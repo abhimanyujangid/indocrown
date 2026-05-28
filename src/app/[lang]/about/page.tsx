@@ -33,7 +33,7 @@ export default async function AboutStandalonePage({ params }: PageProps) {
       <AboutStats dict={dict} />
       <AboutWhoWeAre dict={dict} />
       <AboutHistory dict={dict} />
-      <Cta dict={dict} />
+      <Cta dict={dict} locale={locale} />
       <Footer dict={dict} locale={locale} />
     </>
   );

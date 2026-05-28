@@ -1,3 +1,5 @@
+import NextLink from 'next/link';
+
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
@@ -15,6 +17,7 @@ import { ChevronDownIcon, CloseIcon, LeafGlyph } from './NavIcons';
 import type { NavItem, NavbarProps } from '../types';
 import LanguageSwitcher from '@/src/components/LanguageSwitcher';
 import AnimatedButton from '@/src/components/AnimatedButton';
+import { localizedPath } from '@/src/i18n/paths';
 
 type MobileDrawerProps = NavbarProps & {
   open: boolean;
@@ -23,6 +26,8 @@ type MobileDrawerProps = NavbarProps & {
 };
 
 export default function MobileDrawer({ dict, locale, open, onClose, navItems }: MobileDrawerProps) {
+  const contactHref = localizedPath(locale, '/contact-us');
+
   return (
     <Drawer
       anchor="left"
@@ -53,7 +58,15 @@ export default function MobileDrawer({ dict, locale, open, onClose, navItems }: 
         <Box sx={{ p: 2, pt: 0 }}>
           <LanguageSwitcher locale={locale} />
           <Box sx={{ mt: 2 }}>
-            <AnimatedButton fullWidth startIcon={<LeafGlyph size={18} />} onClick={onClose}>{dict.nav.cta}</AnimatedButton>
+            <AnimatedButton
+              fullWidth
+              component={NextLink}
+              href={contactHref}
+              startIcon={<LeafGlyph size={18} />}
+              onClick={onClose}
+            >
+              {dict.nav.cta}
+            </AnimatedButton>
           </Box>
         </Box>
       </Box>
