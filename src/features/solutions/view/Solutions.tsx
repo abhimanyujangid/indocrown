@@ -5,7 +5,11 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { motion, type Variants } from 'framer-motion';
 
+import NextLink from 'next/link';
+
 import AnimatedButton from '../../../components/AnimatedButton';
+import type { Locale } from '../../../i18n/config';
+import { localizedPath } from '../../../i18n/paths';
 // Re-using LeafGlyph from navigation icons
 import { LeafGlyph } from '../../navigation/components/NavIcons';
 import SolutionCard from '../components/SolutionCard';
@@ -14,6 +18,7 @@ import type { Dictionary } from '../../../app/[lang]/dictionaries';
 
 type SolutionsProps = {
   dict: Dictionary;
+  locale: Locale;
 };
 
 const leftVariants: Variants = {
@@ -34,7 +39,8 @@ const rightVariants: Variants = {
   },
 };
 
-export default function Solutions({ dict }: SolutionsProps) {
+export default function Solutions({ dict, locale }: SolutionsProps) {
+  const galleryHref = localizedPath(locale, '/gallery/images');
   // Use `any` temporarily until dictionary types are regenerated
   const section = (dict as any).solutionsSection;
   if (!section) return null;
@@ -89,7 +95,7 @@ export default function Solutions({ dict }: SolutionsProps) {
             </motion.div>
 
             <motion.div variants={leftVariants} initial="hidden" whileInView="show" viewport={{ once: true, margin: "0px 0px -50px 0px" }}>
-              <AnimatedButton btnVariant={2}>
+              <AnimatedButton component={NextLink} href={galleryHref} btnVariant={2}>
                 {section.cta}
               </AnimatedButton>
             </motion.div>
