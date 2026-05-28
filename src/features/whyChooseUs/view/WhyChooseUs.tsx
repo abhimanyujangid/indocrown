@@ -25,9 +25,10 @@ const cardCenterSx = {
   position: { xs: 'relative' as const, md: 'absolute' as const },
   left: { md: '50%' },
   top: { md: 0 },
-  ml: { md: `${-CARD_WIDTH_MD / 2}px` },
+  ml: { xs: 'auto', md: `${-CARD_WIDTH_MD / 2}px` },
+  mr: { xs: 'auto', md: 0 },
   width: { xs: '100%', sm: 320, md: CARD_WIDTH_MD },
-  maxWidth: CARD_WIDTH_MD,
+  maxWidth: { xs: 360, md: CARD_WIDTH_MD },
   height: { xs: 390, md: CARD_HEIGHT_MD },
 };
 
@@ -129,7 +130,8 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
             display: 'flex',
             flexDirection: { xs: 'column', md: 'row' },
             justifyContent: 'center',
-            alignItems: { xs: 'stretch', md: 'flex-start' },
+            alignItems: { xs: 'center', md: 'flex-start' },
+            px: { xs: 2, sm: 3, md: 0 },
             mt: { xs: 2, md: 4 },
             gap: { xs: 4, md: 0 },
             pb: { xs: 8, md: 2 },
