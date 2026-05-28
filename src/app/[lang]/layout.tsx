@@ -29,6 +29,10 @@ export const metadata: Metadata = {
   title: 'Dhannalal Surendra Kumar Krishi Yantra Udyog',
   description:
     'Trusted agricultural machinery manufacturer — durable tractor-operated farming machines for Indian farmers.',
+  icons: {
+    icon: [{ url: '/favicon.png', type: 'image/png' }],
+    apple: [{ url: '/favicon.png', type: 'image/png' }],
+  },
 };
 
 export async function generateStaticParams() {
