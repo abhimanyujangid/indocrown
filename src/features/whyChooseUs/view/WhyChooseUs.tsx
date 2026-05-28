@@ -39,11 +39,11 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
   const rightRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
 
   return (
-    <Box ref={containerRef} component="section" id="why-choose-us" sx={{ height: { xs: 'auto', md: '300vh' }, bgcolor: 'common.white', position: 'relative', py: { xs: 8, md: 0 } }}>
+    <Box ref={containerRef} component="section" id="why-choose-us" sx={{ height: { xs: 'auto', md: '220vh' }, bgcolor: 'common.white', position: 'relative', py: { xs: 8, md: 0 } }}>
       
       {/* Sticky Inner Container */}
-      <Box sx={{ position: { xs: 'relative', md: 'sticky' }, top: 0, height: { xs: 'auto', md: '115vh' }, overflow: 'hidden', display: 'flex', flexDirection: 'column', pt: { xs: 0, md: 16 } }}>
-        <Container maxWidth="md" sx={{ textAlign: 'center', mb: { xs: 6, md: 8 }, px: { xs: 2, sm: 3, md: 4 } }}>
+      <Box sx={{ position: { xs: 'relative', md: 'sticky' }, top: 0, height: { xs: 'auto', md: '100vh' }, overflow: 'hidden', display: 'flex', flexDirection: 'column', pt: { xs: 0, md: 8 }, pb: { md: 4 } }}>
+        <Container maxWidth="md" sx={{ textAlign: 'center', mb: { xs: 4, md: 3 }, px: { xs: 2, sm: 3, md: 4 }, flexShrink: 0 }}>
           <Box
             sx={{
               display: 'inline-flex',
@@ -70,8 +70,8 @@ export default function WhyChooseUs({ dict }: WhyChooseUsProps) {
           </Typography>
         </Container>
 
-        {/* Cards Wrapper */}
-        <Box sx={{ position: 'relative', flex: 1, display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center', alignItems: 'center', mt: 2, gap: { xs: 4, md: 0 }, pb: { xs: 8, md: 0 } }}>
+        {/* Cards Wrapper — fixed height so cards sit just below the headline (not vertically centered in 115vh) */}
+        <Box sx={{ position: 'relative', width: '100%', maxWidth: 1200, mx: 'auto', height: { xs: 'auto', md: 400 }, display: 'flex', flexDirection: { xs: 'column', md: 'row' }, justifyContent: 'center', alignItems: { xs: 'stretch', md: 'flex-start' }, mt: { xs: 0, md: 1 }, gap: { xs: 4, md: 0 }, pb: { xs: 8, md: 0 }, flexShrink: 0 }}>
           
           {/* Card 0: Left (Dark) */}
           <Box
