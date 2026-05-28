@@ -206,7 +206,7 @@
       },
       {
         "label": "Contact us",
-        "href": "#"
+        "href": "/contact-us"
       }
     ],
     "socials": [
@@ -246,9 +246,16 @@
     "tag": "Get in touch",
     "headline": "We are ready to\nhelp you.",
     "description": "Our team is available to answer your questions about machines, pricing, delivery, and service support.",
-    "address": "Rajasthan, India",
-    "phone": "+91 00000 00000",
-    "email": "info@jangidagroindustries.com",
+    "address": "Khejroli Road, Udaipuria Mode, Chomu, Jaipur, Rajasthan",
+    "location": "Rajasthan, India",
+    "phone": "078775 16416",
+    "phoneHref": "tel:+917877516416",
+    "whatsapp": "+91 78775 16416",
+    "whatsappHref": "https://wa.me/917877516416",
+    "whatsappLabel": "WhatsApp",
+    "emails": [
+      "dskyu53@gmail.com"
+    ],
     "form": {
       "firstName": "First name",
       "lastName": "Last name",

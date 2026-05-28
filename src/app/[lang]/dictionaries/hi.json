@@ -193,7 +193,7 @@
       },
       {
         "label": "संपर्क करें",
-        "href": "#"
+        "href": "/contact-us"
       }
     ],
     "socials": [
@@ -228,9 +228,16 @@
     "tag": "संपर्क करें",
     "headline": "हम आपकी मदद के लिए\nतैयार हैं।",
     "description": "हमारी टीम मशीनों, कीमतों, डिलीवरी और सेवा सहायता से जुड़े आपके सवालों के जवाब देने के लिए उपलब्ध है।",
-    "address": "राजस्थान, भारत",
-    "phone": "+91 00000 00000",
-    "email": "info@jangidagroindustries.com",
+    "address": "खेजरोली रोड, उदयपुरिया मोड, चोमू, जयपुर, राजस्थान",
+    "location": "राजस्थान, भारत",
+    "phone": "078775 16416",
+    "phoneHref": "tel:+917877516416",
+    "whatsapp": "+91 78775 16416",
+    "whatsappHref": "https://wa.me/917877516416",
+    "whatsappLabel": "व्हाट्सऐप",
+    "emails": [
+      "dskyu53@gmail.com"
+    ],
     "form": {
       "firstName": "पहला नाम",
       "lastName": "अंतिम नाम",

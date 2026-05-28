@@ -38,6 +38,56 @@ function EmailIcon() {
   );
 }
 
+function WhatsAppIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+    </svg>
+  );
+}
+
+type ContactDetailRowProps = {
+  icon: React.FC;
+  children: React.ReactNode;
+  href?: string;
+};
+
+function ContactDetailRow({ icon: Icon, children, href }: ContactDetailRowProps) {
+  const content = (
+    <Typography
+      variant="body1"
+      sx={{
+        fontWeight: 600,
+        color: 'primary.main',
+        textDecoration: href ? 'none' : 'inherit',
+        '&:hover': href ? { textDecoration: 'underline' } : undefined,
+      }}
+    >
+      {children}
+    </Typography>
+  );
+
+  return (
+    <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2 }}>
+      <Box sx={{ color: 'primary.main', display: 'flex', mt: 0.25, flexShrink: 0 }}>
+        <Icon />
+      </Box>
+      {href ? (
+        <Box
+          component="a"
+          href={href}
+          {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          sx={{ color: 'inherit', textDecoration: 'none' }}
+        >
+          {content}
+        </Box>
+      ) : (
+        content
+      )}
+    </Box>
+  );
+}
+
 // Reusable Input Component
 const FormInput = ({ placeholder, multiline = false, rows = 1 }: { placeholder: string; multiline?: boolean; rows?: number }) => (
   <InputBase
@@ -149,18 +199,29 @@ export default function ContactForm({ dict }: ContactFormProps) {
 
             {/* Contact Details List */}
             <Stack spacing={3}>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <Box sx={{ color: 'primary.main', display: 'flex' }}><LocationIcon /></Box>
-                <Typography variant="body1" sx={{ fontWeight: 600, color: 'primary.main' }}>{section.address}</Typography>
-              </Box>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <Box sx={{ color: 'primary.main', display: 'flex' }}><PhoneIcon /></Box>
-                <Typography variant="body1" sx={{ fontWeight: 600, color: 'primary.main' }}>{section.phone}</Typography>
-              </Box>
-              <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                <Box sx={{ color: 'primary.main', display: 'flex' }}><EmailIcon /></Box>
-                <Typography variant="body1" sx={{ fontWeight: 600, color: 'primary.main' }}>{section.email}</Typography>
-              </Box>
+              <ContactDetailRow icon={LocationIcon}>
+                {section.address}
+                {section.location ? (
+                  <>
+                    <br />
+                    <Typography component="span" variant="body2" sx={{ fontWeight: 500, color: 'text.secondary' }}>
+                      {section.location}
+                    </Typography>
+                  </>
+                ) : null}
+              </ContactDetailRow>
+              <ContactDetailRow icon={PhoneIcon} href={section.phoneHref}>
+                {section.phone}
+              </ContactDetailRow>
+              <ContactDetailRow icon={WhatsAppIcon} href={section.whatsappHref}>
+                {section.whatsappLabel ? `${section.whatsappLabel}: ` : ''}
+                {section.whatsapp}
+              </ContactDetailRow>
+              {(section.emails as string[]).map((email: string) => (
+                <ContactDetailRow key={email} icon={EmailIcon} href={`mailto:${email}`}>
+                  {email}
+                </ContactDetailRow>
+              ))}
             </Stack>
           </Box>
 

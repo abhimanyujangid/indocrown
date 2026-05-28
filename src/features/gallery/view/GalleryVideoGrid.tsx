@@ -13,7 +13,7 @@ import {
 } from 'framer-motion';
 
 import {
-  DUMMY_GALLERY_VIDEOS,
+  galleryVideos,
   youtubeThumbnailUrl,
   youtubeVideoIdFromUrl,
   type GalleryVideoItem,
@@ -233,7 +233,7 @@ function GalleryVideoCard({
 
 export default function GalleryVideoGrid({
   labels,
-  videos = DUMMY_GALLERY_VIDEOS,
+  videos = galleryVideos,
 }: GalleryVideoGridProps) {
   const reduceMotion = useReducedMotion();
   const [active, setActive] = useState<GalleryVideoItem | null>(null);

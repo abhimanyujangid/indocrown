@@ -2,50 +2,89 @@ export type GalleryVideoItem = {
   id: string;
   title: string;
   description?: string;
-  /** Full YouTube URL (watch, youtu.be, or embed) — swap for your own links */
   youtubeUrl: string;
 };
 
-/** Replace `youtubeUrl` entries with your YouTube links; thumbnails use YouTube’s poster API. */
-export const DUMMY_GALLERY_VIDEOS: GalleryVideoItem[] = [
+export const galleryVideos: GalleryVideoItem[] = [
   {
-    id: 'v1',
-    title: 'Soil health and resilient farms',
-    description: 'Why healthy soil is the foundation of sustainable production.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=K5KAc5CoCjI',
+    id: "xOpSl2QJJcQ",
+    title: "INDOCROWN Video 1",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=xOpSl2QJJcQ",
   },
   {
-    id: 'v2',
-    title: 'Water-smart irrigation',
-    description: 'Using less water while keeping fields productive.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=8pWtPY5uFao',
+    id: "gHmM31EOszo",
+    title: "INDOCROWN Video 2",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=gHmM31EOszo",
   },
   {
-    id: 'v3',
-    title: 'From field to market',
-    description: 'How strong partnerships move harvests to people who need them.',
-    youtubeUrl: 'https://youtu.be/M7lc1UVf-VE',
+    id: "5yA5LUiw93g",
+    title: "INDOCROWN Video 3",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=5yA5LUiw93g",
   },
   {
-    id: 'v4',
-    title: 'Growing with the seasons',
-    description: 'Planning around climate and natural cycles.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+    id: "6ooynWYfRnY",
+    title: "INDOCROWN Video 4",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=6ooynWYfRnY",
   },
   {
-    id: 'v5',
-    title: 'People behind the harvest',
-    description: 'Teams and communities that make every season possible.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=jNQXAC9IVRw',
+    id: "XzIDSQdK7WM",
+    title: "INDOCROWN Video 5",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=XzIDSQdK7WM",
   },
   {
-    id: 'v6',
-    title: 'Innovation in the field',
-    description: 'Tools and ideas shaping the next generation of agriculture.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+    id: "w4ZgU5Pql8Y",
+    title: "INDOCROWN Video 6",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=w4ZgU5Pql8Y",
+  },
+  {
+    id: "z2xyU9nkjmc",
+    title: "INDOCROWN Video 7",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=z2xyU9nkjmc",
+  },
+  {
+    id: "rQp-7RccOJs",
+    title: "INDOCROWN Video 8",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=rQp-7RccOJs",
+  },
+  {
+    id: "MX7TTeZJovo",
+    title: "INDOCROWN Video 9",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=MX7TTeZJovo",
+  },
+  {
+    id: "tUCOUWvhjfI",
+    title: "INDOCROWN Video 10",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=tUCOUWvhjfI",
+  },
+  {
+    id: "aysvfTJEEzE",
+    title: "INDOCROWN Video 11",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=aysvfTJEEzE",
+  },
+  {
+    id: "5mZFS2BVCJM",
+    title: "INDOCROWN Video 12",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=5mZFS2BVCJM",
+  },
+  {
+    id: "8M6JE8d3QF4",
+    title: "INDOCROWN Video 13",
+    description: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=8M6JE8d3QF4",
   },
 ];
-
 export function youtubeVideoIdFromUrl(url: string): string | null {
   const u = url.trim();
   const short = u.match(/youtu\.be\/([^?&#/]+)/);
